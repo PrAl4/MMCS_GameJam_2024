@@ -241,13 +241,25 @@ MonoBehaviour:
   m_FillRect: {fileID: 1202132125826614027}
   m_HandleRect: {fileID: 8811782202849790061}
   m_Direction: 0
-  m_MinValue: 0
+  m_MinValue: 0.0001
   m_MaxValue: 1
   m_WholeNumbers: 0
-  m_Value: 0
+  m_Value: 0.0001
   m_OnValueChanged:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 8014408940800077153}
+        m_TargetAssemblyTypeName: Settings, Assembly-CSharp
+        m_MethodName: SetVolume
+        m_Mode: 0
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1383491338273851704
 GameObject:
   m_ObjectHideFlags: 0
@@ -368,7 +380,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 5807074827874056393}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144710842922273282}
+        m_TargetAssemblyTypeName: PauseMenuButtonsBehaviour, Assembly-CSharp
+        m_MethodName: SettingsExitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &1699765297398255267
 GameObject:
   m_ObjectHideFlags: 0
@@ -649,7 +673,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 2752549767749390246}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144710842922273282}
+        m_TargetAssemblyTypeName: PauseMenuButtonsBehaviour, Assembly-CSharp
+        m_MethodName: ExitButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &3764367987776797950
 GameObject:
   m_ObjectHideFlags: 0
@@ -662,6 +698,7 @@ GameObject:
   - component: {fileID: 426655663553456927}
   - component: {fileID: 5686910676698475842}
   - component: {fileID: 1875132576616989864}
+  - component: {fileID: 1144710842922273282}
   m_Layer: 5
   m_Name: PauseMenuCanva
   m_TagString: Untagged
@@ -753,6 +790,20 @@ MonoBehaviour:
   m_BlockingMask:
     serializedVersion: 2
     m_Bits: 4294967295
+--- !u!114 &1144710842922273282
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3764367987776797950}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ccd16d1e14d5e594a95e2ce0b126c61a, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  pauseMenu: {fileID: 5856774594076655905}
+  settingsMenu: {fileID: 3881245959258590752}
 --- !u!1 &3881245959258590752
 GameObject:
   m_ObjectHideFlags: 0
@@ -764,6 +815,7 @@ GameObject:
   - component: {fileID: 1664785212261987987}
   - component: {fileID: 6240154358123252206}
   - component: {fileID: 8131793294797314060}
+  - component: {fileID: 8014408940800077153}
   m_Layer: 5
   m_Name: Settings_Menu
   m_TagString: Untagged
@@ -831,6 +883,21 @@ MonoBehaviour:
   m_FillOrigin: 0
   m_UseSpriteMesh: 0
   m_PixelsPerUnitMultiplier: 1
+--- !u!114 &8014408940800077153
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3881245959258590752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 873ff588ce8f17041b10c87bc24d586e, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  settingsData: {fileID: 11400000, guid: 6d45f318d0ca1434abbeb645c1064a29, type: 2}
+  audioMixer: {fileID: 24100000, guid: 1be5faeb81387594b9b2c00cffe8c191, type: 2}
+  volumeSlider: {fileID: 328173636207369052}
 --- !u!1 &4184664325172197188
 GameObject:
   m_ObjectHideFlags: 0
@@ -1030,7 +1097,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 7439661334172424832}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144710842922273282}
+        m_TargetAssemblyTypeName: PauseMenuButtonsBehaviour, Assembly-CSharp
+        m_MethodName: ResumeGameButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5481691341782150098
 GameObject:
   m_ObjectHideFlags: 0
@@ -1151,7 +1230,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 8819783562237269969}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 1144710842922273282}
+        m_TargetAssemblyTypeName: PauseMenuButtonsBehaviour, Assembly-CSharp
+        m_MethodName: SettingsJoinButton
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!1 &5557920742446047943
 GameObject:
   m_ObjectHideFlags: 0
