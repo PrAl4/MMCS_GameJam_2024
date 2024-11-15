@@ -8,7 +8,6 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] float speed = 3f;
-    [SerializeField] private float jumpForce = 3000000000f;
     private Rigidbody2D rb;
     private float move;
     private bool isGrounded;
@@ -44,18 +43,25 @@ public class PlayerController : MonoBehaviour
     {
 
         float inputAxis = Input.GetAxis("Horizontal");
-        Vector2 velocity = rb.velocity;
-        velocity.x = inputAxis * speed;
-        rb.velocity = velocity;
-        
-
-        if (inputAxis > 0)
+        if (inputAxis == 0)
         {
-            spriteRenderer.flipX = false;
+            rb.velocity = new Vector2(0f, rb.velocity.y) ;
         }
-        else if (inputAxis < 0)
+        else
         {
-            spriteRenderer.flipX = true;
+            Vector2 velocity = rb.velocity;
+            velocity.x = inputAxis * speed;
+            rb.velocity = velocity;
+
+
+            if (inputAxis > 0)
+            {
+                spriteRenderer.flipX = false;
+            }
+            else if (inputAxis < 0)
+            {
+                spriteRenderer.flipX = true;
+            }
         }
         if (isGrounded)
         {
@@ -72,7 +78,7 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        rb.AddForce(transform.up * jumpForce, ForceMode2D.Impulse);
+        rb.velocity = new Vector2(rb.velocity.x, 7f);
     }
 
     private void OnCollisionEnter2D(Collision2D collision)
@@ -80,13 +86,17 @@ public class PlayerController : MonoBehaviour
         if (!isGrounded)
         {
             isGrounded = collision.contacts.All(c => c.point.y < transform.position.y);
+            Debug.Log(isGrounded);
         }
+        Debug.Log(isGrounded);
     }
 
     private void OnCollisionExit2D(Collision2D collision)
     {
 
         isGrounded = collision.contacts.All(c => c.point.y > transform.position.y);
+        Debug.Log(isGrounded);
+
 
     }
 }
