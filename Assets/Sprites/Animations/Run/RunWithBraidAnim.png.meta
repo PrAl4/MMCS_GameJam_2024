@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RunWithBraidAnim_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.52500004, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 86024be90a8f71442a6a44e057527bd1
+      internalID: 104309527
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithBraidAnim_1
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.52500004, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: baeaa14416cdb2a479ed179681bef99a
+      internalID: -787281803
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithBraidAnim_2
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.52500004, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e5af9325d9f4f47bdcfed9161b1deb
+      internalID: 1527151589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithBraidAnim_3
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.52500004, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c8a88150aed1cc548bff4597be8924d0
+      internalID: -469397531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithBraidAnim_4
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.52500004, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 232c105a1a353e34b83d312f2639bf16
+      internalID: -521815114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithBraidAnim_5
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 0
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.52500004, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb9b34a8d3e3d624b833ca2e73917b53
+      internalID: -262853645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithBraidAnim_6
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 0
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.525, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4cecd48d8b962e408b4e28ce273e352
+      internalID: -48131191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithBraidAnim_7
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 0
+        width: 40
+        height: 44
+      alignment: 9
+      pivot: {x: 0.52500004, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b0b3ba0e4183d5f4797b8f1d53f584e3
+      internalID: 1300030109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +274,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RunWithBraidAnim_0: 104309527
+      RunWithBraidAnim_1: -787281803
+      RunWithBraidAnim_2: 1527151589
+      RunWithBraidAnim_3: -469397531
+      RunWithBraidAnim_4: -521815114
+      RunWithBraidAnim_5: -262853645
+      RunWithBraidAnim_6: -48131191
+      RunWithBraidAnim_7: 1300030109
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

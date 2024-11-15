@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IdleWithLaser 1_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 25
+        height: 32
+      alignment: 9
+      pivot: {x: 0.52, y: 0.53125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e9bcbe9ede0b47409b50b7e0b2ac93f
+      internalID: -251202170
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithLaser 1_1
+      rect:
+        serializedVersion: 2
+        x: 63
+        y: 0
+        width: 25
+        height: 32
+      alignment: 9
+      pivot: {x: 0.52, y: 0.53125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17e7ef2c9c67a16428bb54bf71792e5d
+      internalID: 1702183353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithLaser 1_2
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 0
+        width: 25
+        height: 31
+      alignment: 9
+      pivot: {x: 0.52, y: 0.5483871}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24548d68b22ef6347bf6a9f97e59108c
+      internalID: -886637339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithLaser 1_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 25
+        height: 32
+      alignment: 9
+      pivot: {x: 0.52, y: 0.53125}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 46b4f8b784afff547bd1f79feeffd56c
+      internalID: 231993137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IdleWithLaser 1_0: -251202170
+      IdleWithLaser 1_1: 1702183353
+      IdleWithLaser 1_2: -886637339
+      IdleWithLaser 1_3: 231993137
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: JumpWithLaser_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 25
+        height: 32
+      alignment: 9
+      pivot: {x: 0.52, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7d3ebf9c97468459ed5c8f8b63fb5f
+      internalID: 2026621323
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpWithLaser_1
+      rect:
+        serializedVersion: 2
+        x: 66
+        y: 0
+        width: 25
+        height: 32
+      alignment: 9
+      pivot: {x: 0.52, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 72b4fbe27dca7a741b0239604c7bf3c3
+      internalID: -1444265235
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpWithLaser_2
+      rect:
+        serializedVersion: 2
+        x: 114
+        y: 0
+        width: 25
+        height: 32
+      alignment: 9
+      pivot: {x: 0.52, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 214c5a4afdf92e54b9716adcc408e4f0
+      internalID: -1029228306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: JumpWithLaser_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 25
+        height: 32
+      alignment: 9
+      pivot: {x: 0.52, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b2eb0a32db2f074683598dcec570282
+      internalID: -2129132249
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      JumpWithLaser_0: 2026621323
+      JumpWithLaser_1: -1444265235
+      JumpWithLaser_2: -1029228306
+      JumpWithLaser_3: -2129132249
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,154 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DeadPurpleEnemy_0
+      rect:
+        serializedVersion: 2
+        x: 13
+        y: 0
+        width: 20
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fa9ad20132bc96d4a9a5890bea85543e
+      internalID: 235579068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadPurpleEnemy_1
+      rect:
+        serializedVersion: 2
+        x: 61
+        y: 0
+        width: 20
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba16d140d2d16554ba5ec9eb941e4cbf
+      internalID: -708617164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadPurpleEnemy_2
+      rect:
+        serializedVersion: 2
+        x: 109
+        y: 0
+        width: 20
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 52843437d82ac38469f64b594b7151b3
+      internalID: -1940245290
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadPurpleEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 157
+        y: 0
+        width: 20
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e642b2c142d07da48b664b63c1fc7e92
+      internalID: 380105238
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadPurpleEnemy_4
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 0
+        width: 20
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bec64f31c0c62aa448c211dc3fe88589
+      internalID: -604438700
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadPurpleEnemy_5
+      rect:
+        serializedVersion: 2
+        x: 254
+        y: 0
+        width: 20
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 90e677e9b6c75e84fabec5ce2c3fa1b1
+      internalID: 1332723415
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadPurpleEnemy_6
+      rect:
+        serializedVersion: 2
+        x: 301
+        y: 0
+        width: 20
+        height: 22
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73359dfd6e009d8439618621e1462c0f
+      internalID: -2002805748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +253,18 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DeadPurpleEnemy_0: 235579068
+      DeadPurpleEnemy_1: -708617164
+      DeadPurpleEnemy_10: -284886005
+      DeadPurpleEnemy_2: -1940245290
+      DeadPurpleEnemy_3: 380105238
+      DeadPurpleEnemy_4: -604438700
+      DeadPurpleEnemy_5: 1332723415
+      DeadPurpleEnemy_6: -2002805748
+      DeadPurpleEnemy_7: -1028310254
+      DeadPurpleEnemy_8: 1294935107
+      DeadPurpleEnemy_9: -1894221414
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
