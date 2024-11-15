@@ -10,6 +10,8 @@ public class PlayerController : MonoBehaviour
     private Rigidbody2D rb;
     private Vector2 move;
     private Animator animator;
+    CharacterController characterController;
+    private Vector2 zero = new Vector2(0, 0);
 
     private void Awake()
     {
@@ -20,22 +22,22 @@ public class PlayerController : MonoBehaviour
     void Start()
     {
         animator = GetComponent<Animator>();
+        characterController = GetComponent<CharacterController>();
+        Cursor.lockState = CursorLockMode.Locked;
+        Cursor.visible = false;
     }
 
 
     void Update()
     {
         animator.SetBool("IsRuning", false);
-        if (Input.GetKey("a"))
+        move = transform.TransformDirection(Vector2.right);
+        if (move != zero)
         {
             animator.SetBool("IsRuning", true);
             rb.velocity = new Vector2(-speed, rb.velocity.y);
         }
-        else if (Input.GetKey("d"))
-        {
-            animator.SetBool("IsRuning", true);
-            rb.velocity = new Vector2(speed, rb.velocity.y);
-        }
+        
 
     }
 }
