@@ -34,7 +34,7 @@ TextureImporter:
   maxTextureSize: 2048
   textureSettings:
     serializedVersion: 2
-    filterMode: 1
+    filterMode: 0
     aniso: 1
     mipBias: 0
     wrapU: 1
@@ -43,12 +43,12 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 100
+  spritePixelsToUnits: 26
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -95,7 +95,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RedEnemyIdle_0
+      rect:
+        serializedVersion: 2
+        x: 9
+        y: 17
+        width: 29
+        height: 23
+      alignment: 9
+      pivot: {x: 0.4827586, y: 0.17391305}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f31aa2b0e21f874d8819daa3d276944
+      internalID: -752609201
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedEnemyIdle_1
+      rect:
+        serializedVersion: 2
+        x: 56
+        y: 18
+        width: 33
+        height: 20
+      alignment: 9
+      pivot: {x: 0.42424244, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2f9fda3363236714ca703c6ac20bc9c7
+      internalID: 5605452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedEnemyIdle_2
+      rect:
+        serializedVersion: 2
+        x: 98
+        y: 14
+        width: 46
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3043478, y: 0.23529412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3aef249312cf05c4ba04248f7757d145
+      internalID: 1786371254
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedEnemyIdle_3
+      rect:
+        serializedVersion: 2
+        x: 154
+        y: 4
+        width: 27
+        height: 28
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.14285715}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8546d22fffefa40917ad8ca1e4f1be
+      internalID: 1366210424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedEnemyIdle_4
+      rect:
+        serializedVersion: 2
+        x: 194
+        y: 14
+        width: 46
+        height: 17
+      alignment: 9
+      pivot: {x: 0.3043478, y: 0.23529412}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ca829e6e3ecd6a447a6d0c14d6a04d6a
+      internalID: 571033353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RedEnemyIdle_5
+      rect:
+        serializedVersion: 2
+        x: 248
+        y: 18
+        width: 33
+        height: 20
+      alignment: 9
+      pivot: {x: 0.42424244, y: 0.2}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 020d5844d4005d64887167e7d30bb5be
+      internalID: 126779568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +232,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RedEnemyIdle_0: -752609201
+      RedEnemyIdle_1: 5605452
+      RedEnemyIdle_2: 1786371254
+      RedEnemyIdle_3: 1366210424
+      RedEnemyIdle_4: 571033353
+      RedEnemyIdle_5: 126779568
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
