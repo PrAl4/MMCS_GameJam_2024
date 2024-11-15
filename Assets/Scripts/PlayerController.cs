@@ -12,7 +12,7 @@ public class PlayerController : MonoBehaviour
     private float move;
     private bool isGrounded;
     private SpriteRenderer spriteRenderer;
-    //private Animator animator;
+    private Animator animator;
 
 
     private void Awake()
@@ -25,7 +25,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        //animator = GetComponent<Animator>();
+        animator = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -67,11 +67,11 @@ public class PlayerController : MonoBehaviour
         {
             if (inputAxis != 0)
             {
-                //animator.SetBool("IsRuning", true);
+                animator.SetBool("IsRuning", true);
             }
             else
             {
-                //animator.SetBool("IsRuning", false);
+                animator.SetBool("IsRuning", false);
             }
         }
 
