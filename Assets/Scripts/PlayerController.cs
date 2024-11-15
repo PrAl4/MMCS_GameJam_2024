@@ -9,8 +9,7 @@ public class PlayerController : MonoBehaviour
     [SerializeField] float speed = 3f;
     private Rigidbody2D rb;
     private Vector2 move;
-    private Animator animator;
-    CharacterController characterController;
+    //private Animator animator;
     private Vector2 zero = new Vector2(0, 0);
 
     private void Awake()
@@ -21,8 +20,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
-        animator = GetComponent<Animator>();
-        characterController = GetComponent<CharacterController>();
+        //animator = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
     }
@@ -30,12 +28,14 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        animator.SetBool("IsRuning", false);
-        move = transform.TransformDirection(Vector2.right);
+        //animator.SetBool("IsRuning", false);
+        move = new Vector2(Input.GetAxis("Horizontal"), 0);
         if (move != zero)
         {
-            animator.SetBool("IsRuning", true);
-            rb.velocity = new Vector2(-speed, rb.velocity.y);
+            //animator.SetBool("IsRuning", true);
+            Vector2 velocity = new Vector2(move[0] * speed, rb.velocity.y);
+
+            rb.velocity = velocity;
         }
         
 
