@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class PauseMenuButtonsBehaviour : MonoBehaviour
 {
@@ -15,11 +16,11 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
 
     private void Update()
     {
-        if (Input.GetKeyDown(KeyCode.E) && pauseMenuActive == MenuStates.Resume) // Escape
+        if (Input.GetKeyDown(KeyCode.Escape) && pauseMenuActive == MenuStates.Resume) // Escape
         {
             PauseGame();
         }
-        else if (Input.GetKeyDown(KeyCode.E) && pauseMenuActive == MenuStates.Pause) // Escape
+        else if (Input.GetKeyDown(KeyCode.Escape) && pauseMenuActive == MenuStates.Pause) // Escape
         {
             ResumeGame();
         }
@@ -65,7 +66,7 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
 
     public void ExitButton() 
     {
-        Application.Quit();
+        SceneManager.LoadScene(0);
     }
 
 }
