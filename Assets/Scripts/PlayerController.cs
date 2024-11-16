@@ -32,6 +32,12 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
+        if(rb.velocity.y == 0)
+        {
+            isGrounded = true;
+        }
+        else { isGrounded = false; }
+
         if (Input.GetKeyDown(KeyCode.Space) && isGrounded)
         {
             isGrounded = false;
@@ -81,22 +87,4 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, 7f);
     }
 
-    private void OnCollisionEnter2D(Collision2D collision)
-    {
-        if (!isGrounded)
-        {
-            isGrounded = collision.contacts.All(c => c.point.y < transform.position.y);
-            Debug.Log(isGrounded);
-        }
-        Debug.Log(isGrounded);
-    }
-
-    private void OnCollisionExit2D(Collision2D collision)
-    {
-
-        isGrounded = collision.contacts.All(c => c.point.y > transform.position.y);
-        Debug.Log(isGrounded);
-
-
-    }
 }
