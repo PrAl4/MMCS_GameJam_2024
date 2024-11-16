@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RunWithShield_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5652174, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c3a228ab50f07440833898412d872d1
+      internalID: -1511903427
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithShield_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5652174, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6c9156206caa9b64388541251b633e7c
+      internalID: 1754257310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithShield_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5652174, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7b7fdcf1fc5a18d42b771417de2b0abf
+      internalID: 865522467
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithShield_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5652174, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c45699785a030b47b73cdd0a47d28da
+      internalID: 2080206756
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithShield_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5652174, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 38a69fe1103e2694cba1e90296c184fc
+      internalID: 440745283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithShield_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5652174, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8906fa6e5a1399d4a83c8ea805677804
+      internalID: -823993081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithShield_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5652174, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 262d3ced495babd458e136fd090243a7
+      internalID: 1596837351
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithShield_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5652174, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3ea99b3c00fbc546a67135ce9db2706
+      internalID: -997639970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +274,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RunWithShield_0: -1511903427
+      RunWithShield_1: 1754257310
+      RunWithShield_2: 865522467
+      RunWithShield_3: 2080206756
+      RunWithShield_4: 440745283
+      RunWithShield_5: -823993081
+      RunWithShield_6: 1596837351
+      RunWithShield_7: -997639970
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

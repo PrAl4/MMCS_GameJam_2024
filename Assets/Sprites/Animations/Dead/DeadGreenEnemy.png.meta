@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,133 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: DeadGreenEnemy_0
+      rect:
+        serializedVersion: 2
+        x: 5
+        y: 3
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 683e7c223d2228447ad9ba5b5a5e351d
+      internalID: -848601245
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadGreenEnemy_1
+      rect:
+        serializedVersion: 2
+        x: 31
+        y: 3
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 29d89ebcce3bd9b46a8935690eee34b0
+      internalID: -1300579672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadGreenEnemy_2
+      rect:
+        serializedVersion: 2
+        x: 57
+        y: 3
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a4c825d42655f48b9e11a808103171
+      internalID: -724987289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadGreenEnemy_3
+      rect:
+        serializedVersion: 2
+        x: 83
+        y: 3
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e28688712eed7164eb7630508ea773ee
+      internalID: 345268026
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadGreenEnemy_4
+      rect:
+        serializedVersion: 2
+        x: 110
+        y: 3
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63e9932fcfb94a94594b71f478db92b0
+      internalID: -897181564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: DeadGreenEnemy_5
+      rect:
+        serializedVersion: 2
+        x: 136
+        y: 3
+        width: 16
+        height: 17
+      alignment: 9
+      pivot: {x: 0.5, y: 0.47058824}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 344bebd481f30c44aae5f2426fd60f41
+      internalID: -2024972173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +232,13 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      DeadGreenEnemy_0: -848601245
+      DeadGreenEnemy_1: -1300579672
+      DeadGreenEnemy_2: -724987289
+      DeadGreenEnemy_3: 345268026
+      DeadGreenEnemy_4: -897181564
+      DeadGreenEnemy_5: -2024972173
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

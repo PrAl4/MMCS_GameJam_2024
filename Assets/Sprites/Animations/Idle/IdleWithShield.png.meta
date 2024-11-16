@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,322 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IdleWithShield_0
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 20
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b8debf47acc400145ae5bab8f7db3023
+      internalID: 1998364203
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 21
+        height: 32
+      alignment: 9
+      pivot: {x: 0.47619048, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0c335977c385ea4ca278fec3e7d86a0
+      internalID: 2052712510
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_2
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4347826, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3680e1996a301f54c86e48c0624ad2aa
+      internalID: 1803717771
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4347826, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ac29b46cd3b014f88ddc32dfea1ebc
+      internalID: 831760522
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_5
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a8c74b9b24ab3964c886e3ec8c8baba0
+      internalID: -1899156588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_6
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddc806f0cb7f664469a951973e2271b6
+      internalID: 553521672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_7
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 0
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.48387095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a4de5da51e034c142b02fa761accd545
+      internalID: -106491824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_8
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 0
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.48387095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e6a4bfe9c1271741aa0f41a9334d177
+      internalID: -454806968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_9
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 24
+        height: 31
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.48387095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bf8ec64d950e5448b19bc7ec7ab9980
+      internalID: 1064174873
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_10
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 0
+        width: 24
+        height: 32
+      alignment: 9
+      pivot: {x: 0.41666666, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2936c2b83e8d4347b209da1e15f849a
+      internalID: -137871374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_11
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4347826, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d52549cd887704396e10ed9e0492b9
+      internalID: 1974652722
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_12
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4347826, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12b8c451c60a484479f930ebfc322a51
+      internalID: -483787939
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_13
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 0
+        width: 23
+        height: 32
+      alignment: 9
+      pivot: {x: 0.4347826, y: 0.46875}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b05d20fe9453bfa45b470dfa4e2af538
+      internalID: -1624833893
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_15
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 0
+        width: 22
+        height: 31
+      alignment: 9
+      pivot: {x: 0.45454547, y: 0.48387095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 48c854bb491fabd45957e4b02824fe45
+      internalID: 463223731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithShield_16
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 0
+        width: 20
+        height: 31
+      alignment: 9
+      pivot: {x: 0.5, y: 0.48387095}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a382b6816c8cfe4c9797c89cec5e781
+      internalID: -1982354406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +421,25 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IdleWithShield_0: 1998364203
+      IdleWithShield_1: 2052712510
+      IdleWithShield_10: -137871374
+      IdleWithShield_11: 1974652722
+      IdleWithShield_12: -483787939
+      IdleWithShield_13: -1624833893
+      IdleWithShield_14: -449016884
+      IdleWithShield_15: 463223731
+      IdleWithShield_16: -1982354406
+      IdleWithShield_17: 1110277404
+      IdleWithShield_2: 1803717771
+      IdleWithShield_3: 831760522
+      IdleWithShield_4: -1681984007
+      IdleWithShield_5: -1899156588
+      IdleWithShield_6: 553521672
+      IdleWithShield_7: -106491824
+      IdleWithShield_8: -454806968
+      IdleWithShield_9: 1064174873
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

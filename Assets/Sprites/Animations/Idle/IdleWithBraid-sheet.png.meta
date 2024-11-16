@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 21af019abadf5e74ca79fdda96f32c67
+guid: 4137da13f3dffde458c9b08a7aad1104
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,91 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: IdleWithBraid-sheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 40
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4883721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7a47fbcd5a8a3a4e9f9a22cabd76589
+      internalID: -1031382307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithBraid-sheet_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 40
+        height: 43
+      alignment: 9
+      pivot: {x: 0.5, y: 0.4883721}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1144781be96d34d4091354ebc7398539
+      internalID: -1681901193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithBraid-sheet_2
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 40
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e2a0ea47ff46b4499d22bae63c40527
+      internalID: -1133781434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: IdleWithBraid-sheet_3
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 40
+        height: 42
+      alignment: 9
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6d6c14474a7d25408429275e65216ec
+      internalID: 1878029034
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +190,11 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      IdleWithBraid-sheet_0: -1031382307
+      IdleWithBraid-sheet_1: -1681901193
+      IdleWithBraid-sheet_2: -1133781434
+      IdleWithBraid-sheet_3: 1878029034
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 

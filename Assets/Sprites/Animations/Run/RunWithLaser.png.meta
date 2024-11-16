@@ -43,7 +43,7 @@ TextureImporter:
   nPOTScale: 0
   lightmap: 0
   compressionQuality: 50
-  spriteMode: 1
+  spriteMode: 2
   spriteExtrude: 1
   spriteMeshType: 1
   alignment: 0
@@ -95,7 +95,175 @@ TextureImporter:
     forceMaximumCompressionQuality_BC6H_BC7: 0
   spriteSheet:
     serializedVersion: 2
-    sprites: []
+    sprites:
+    - serializedVersion: 2
+      name: RunWithLaser_0
+      rect:
+        serializedVersion: 2
+        x: 17
+        y: 0
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28cfe8133a61b1443a27e0e94478b661
+      internalID: -452207798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithLaser_1
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d62b9a01d2c7e041b206102787b7d17
+      internalID: 1362092150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithLaser_2
+      rect:
+        serializedVersion: 2
+        x: 113
+        y: 0
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d3e24d62cee8394a850166f885621a7
+      internalID: -1660330671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithLaser_3
+      rect:
+        serializedVersion: 2
+        x: 162
+        y: 0
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdab0a1934496e246aa02e96755ec476
+      internalID: 1826965014
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithLaser_4
+      rect:
+        serializedVersion: 2
+        x: 209
+        y: 0
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 224cafdc4b8a8364fa5a0655c9641d07
+      internalID: 292802649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithLaser_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 0
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2bc23bef0fcd59347bbac0f467e8126e
+      internalID: -1546246729
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithLaser_6
+      rect:
+        serializedVersion: 2
+        x: 305
+        y: 0
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db474177199431142a7d0d44713bfa7a
+      internalID: -1012907819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: RunWithLaser_7
+      rect:
+        serializedVersion: 2
+        x: 354
+        y: 0
+        width: 27
+        height: 32
+      alignment: 9
+      pivot: {x: 0.5185185, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0cdeee74aee1bb94498e3b51a34cc751
+      internalID: -1282576636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
     outline: []
     physicsShape: []
     bones: []
@@ -106,7 +274,15 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      RunWithLaser_0: -452207798
+      RunWithLaser_1: 1362092150
+      RunWithLaser_2: -1660330671
+      RunWithLaser_3: 1826965014
+      RunWithLaser_4: 292802649
+      RunWithLaser_5: -1546246729
+      RunWithLaser_6: -1012907819
+      RunWithLaser_7: -1282576636
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
