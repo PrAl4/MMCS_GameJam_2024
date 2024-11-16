@@ -16,6 +16,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    public GameObject BraidHitArea;
+    BraidAreaTrigger braidHitArea;
     public int WeaponKey    // 0 - без, 1 - коса, 2 - щит, 3 - посох, 4 - лазер
     {
         get { return weaponKey; }
@@ -54,6 +56,7 @@ public class PlayerController : MonoBehaviour
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
         WeaponKey = weaponKey;
+        braidHitArea = BraidHitArea.GetComponent<BraidAreaTrigger>();
     }
 
     void Update()
@@ -73,6 +76,14 @@ public class PlayerController : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Mouse0) && isGrounded && !IsAttack)
         {
             IsAttack = true;
+            if (WeaponKey == 1)
+            {
+                List<GameObject> triggers = braidHitArea.GetTriggers();
+                foreach (GameObject trigger in triggers)
+                {
+                    Debug.Log(trigger);     // здесь будет наносится урон по RedEnemy
+                }
+            }
         }
 
         for (int i = 0; i < 4; i++)
@@ -100,10 +111,12 @@ public class PlayerController : MonoBehaviour
 
             if (inputAxis > 0)
             {
+                braidHitArea.FlipHitArea(false);
                 spriteRenderer.flipX = false;
             }
             else if (inputAxis < 0)
             {
+                braidHitArea.FlipHitArea(true);
                 spriteRenderer.flipX = true;
             }
         }
