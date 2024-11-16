@@ -8,14 +8,15 @@ public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] float speed = 3f;
-    [SerializeField] int weaponKey = 0; // 0 - без, 1 - коса, 2 - щит, 3 - посох, 4 - лазер
+    [SerializeField] int weaponKey = 0;
+    private bool isAttack = false;
     private Rigidbody2D rb;
     private float move;
     private bool isGrounded;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
-    public int WeaponKey
+    public int WeaponKey    // 0 - без, 1 - коса, 2 - щит, 3 - посох, 4 - лазер
     {
         get { return weaponKey; }
         set
@@ -23,6 +24,20 @@ public class PlayerController : MonoBehaviour
             weaponKey = value;
             animator.SetInteger("WeaponKey", weaponKey);
         }
+    }
+    public bool IsAttack 
+    {
+        get { return isAttack; }
+        set
+        {
+            isAttack = value;
+            animator.SetBool("IsAttack", isAttack);
+        }
+    }
+
+    void ResetAttack()
+    {
+        IsAttack = false;
     }
 
     private void Awake()
@@ -54,11 +69,15 @@ public class PlayerController : MonoBehaviour
             isGrounded = false;
             Jump();
         }
+
+        if (Input.GetKeyDown(KeyCode.Mouse0) && isGrounded && !IsAttack)
+        {
+            IsAttack = true;
+        }
     }
 
     void FixedUpdate()
     {
-        Debug.Log(isGrounded);
         float inputAxis = Input.GetAxis("Horizontal");
         if (inputAxis == 0)
         {
