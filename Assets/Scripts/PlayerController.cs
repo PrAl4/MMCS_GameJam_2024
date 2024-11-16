@@ -74,6 +74,14 @@ public class PlayerController : MonoBehaviour
         {
             IsAttack = true;
         }
+
+        for (int i = 0; i < 4; i++)
+        {
+            if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+            {
+                WeaponKey = i + 1;
+            }
+        }
     }
 
     void FixedUpdate()
