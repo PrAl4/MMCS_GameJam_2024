@@ -15,6 +15,8 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    private SoundManager soundManager;
+
     public int WeaponKey
     {
         get { return weaponKey; }
@@ -35,6 +37,7 @@ public class PlayerController : MonoBehaviour
 
     void Start()
     {
+        soundManager = GameObject.Find("SoundManager").GetComponent<SoundManager>();
         animator = GetComponent<Animator>();
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
@@ -69,7 +72,6 @@ public class PlayerController : MonoBehaviour
             Vector2 velocity = rb.velocity;
             velocity.x = inputAxis * speed;
             rb.velocity = velocity;
-
 
             if (inputAxis > 0)
             {
