@@ -18,7 +18,6 @@ public class PlayerController : MonoBehaviour
     private GameObject player;
 
     public GameObject SnowBall;
-    public GameObject Laser;
     public float SnowBallTimerDuration = 0.5f;
     private bool snowBallTimerActive = false;
 
@@ -41,7 +40,7 @@ public class PlayerController : MonoBehaviour
         {
             isAttack = value;
             animator.SetBool("IsAttack", isAttack);
-            
+
 
         }
     }
@@ -67,15 +66,15 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
         WeaponKey = weaponKey;
         braidHitArea = BraidHitArea.GetComponent<BraidAreaTrigger>();
-        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+       // soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
     void Update()
     {
-        if(rb.velocity.y <= 6f)
+        if (rb.velocity.y <= 0.001f)
         {
             isGrounded = true;
-            soundManager.StoppedJumping();
+           // soundManager.StoppedJumping();
         }
         else { isGrounded = false; }
 
@@ -97,7 +96,8 @@ public class PlayerController : MonoBehaviour
                     Debug.Log(trigger);     //здесь будет наносится урон косой по RedEnemy. trigger - red enemy.
                 }
             }
-            else if (WeaponKey == 3 && !snowBallTimerActive) {
+            else if (WeaponKey == 3 && !snowBallTimerActive)
+            {
 
                 soundManager.Play("Staff");
 
@@ -107,15 +107,6 @@ public class PlayerController : MonoBehaviour
                 SnowBallController snowBall = instance.GetComponent<SnowBallController>();
                 snowBall.setDirection(-dir);
             }
-            else if (WeaponKey == 4 && !snowBallTimerActive)
-            {
-
-                StartCoroutine(StartTimer());
-                int dir = 2 * (spriteRenderer.flipX ? 1 : 0) - 1;
-                GameObject instance = Instantiate(Laser, transform.position + new Vector3(0.5f * -dir, 0, 0), Quaternion.identity);
-                LaserController laser = instance.GetComponent<LaserController>();
-                laser.setDirection(-dir);
-            }
         }
 
         for (int i = 0; i < 4; i++)
@@ -124,7 +115,6 @@ public class PlayerController : MonoBehaviour
             {
                 WeaponKey = i + 1;
                 soundManager.Play("ChangeWeapon");
-                soundManager.PlaySoundtrack(WeaponKey);
             }
         }
     }
@@ -141,15 +131,13 @@ public class PlayerController : MonoBehaviour
         float inputAxis = Input.GetAxis("Horizontal");
         if (inputAxis == 0)
         {
-            rb.velocity = new Vector2(0f, rb.velocity.y) ;
+            rb.velocity = new Vector2(0f, rb.velocity.y);
         }
         else
         {
             Vector2 velocity = rb.velocity;
             velocity.x = inputAxis * speed;
             rb.velocity = velocity;
-
-
             if (inputAxis > 0)
             {
                 braidHitArea.FlipHitArea(false);
@@ -177,24 +165,27 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, 7f);
+        rb.velocity = new Vector2(rb.velocity.x, 9f);
         animator.SetBool("IsJumping", true);
-        soundManager.Jumping();
+        animator.SetBool("IsRuning", false);
+        // soundManager.Jumping();
     }
-    void CollisionEnter2D(Collision collision)
+    void CollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "RedEnemy")
         {
-            if (weaponKey == 2)
+            if (WeaponKey == 2)
             {
-                Destroy(collision.gameObject);
+
+                Debug.Log(gameObject);
+                GameObject.Destroy(gameObject);
             }
             Die();
         }
     }
     void Die()
     {
-        Destroy(player);
+        Destroy(gameObject);
     }
 
 }

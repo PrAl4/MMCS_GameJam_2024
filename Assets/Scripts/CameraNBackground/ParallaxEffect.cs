@@ -20,7 +20,7 @@ public class ParallaxEffect : MonoBehaviour
     }
 
 
-    void Update()
+    void FixedUpdate()
     {
         Vector3 cameraPos = _mainCamera.transform.position;
         float temp = cameraPos.x * (1 - _amountOfParallax);
