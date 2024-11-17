@@ -7,7 +7,7 @@ public class CameraFollow : MonoBehaviour
     [SerializeField]
     GameObject camHelper;
 
-    void Update()
+    void FixedUpdate()
     {
         Vector3 pos = this.transform.position;
         pos = new Vector3(camHelper.transform.position.x, 0, -10);
