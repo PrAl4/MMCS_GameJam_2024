@@ -7,6 +7,7 @@ public class SoundManager : MonoBehaviour
 {
     public Sound[] sounds;
     private bool isCoroutine = false;
+    private bool jump = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -20,7 +21,7 @@ public class SoundManager : MonoBehaviour
     }
     void Update()
     {
-        if (Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D))
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) & !jump )
         {
             FootstepsCoroutine();
         }
@@ -61,5 +62,19 @@ public class SoundManager : MonoBehaviour
         PlayWalk();
         yield return  new WaitForSeconds(0.7f);
         isCoroutine = false;
+    }
+
+    public void Jumping()
+    {
+        jump = true;
+        Play("Jump");
+    }
+    public void StoppedJumping()
+    {
+        jump = false;
+    }
+    public void PlaySoundtrack()
+    {
+
     }
 }

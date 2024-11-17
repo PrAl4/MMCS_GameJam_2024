@@ -72,6 +72,7 @@ public class PlayerController : MonoBehaviour
         if(rb.velocity.y == 0)
         {
             isGrounded = true;
+            soundManager.StoppedJumping();
         }
         else { isGrounded = false; }
 
@@ -94,6 +95,9 @@ public class PlayerController : MonoBehaviour
                 }
             }
             else if (WeaponKey == 3 && !snowBallTimerActive) {
+
+                soundManager.Play("Staff");
+
                 StartCoroutine(StartTimer());
                 int dir = 2 * (spriteRenderer.flipX ? 1 : 0) - 1;
                 GameObject instance = Instantiate(SnowBall, transform.position + new Vector3(0.5f * -dir, 0, 0), Quaternion.identity);
@@ -107,6 +111,7 @@ public class PlayerController : MonoBehaviour
             if (Input.GetKeyDown(KeyCode.Alpha1 + i))   //смена оружия на 1, 2, 3, 4.
             {
                 WeaponKey = i + 1;
+                soundManager.Play("ChangeWeapon");
             }
         }
     }
@@ -161,6 +166,7 @@ public class PlayerController : MonoBehaviour
     {
         rb.velocity = new Vector2(rb.velocity.x, 7f);
         animator.SetBool("IsJumping", true);
+        soundManager.Jumping();
     }
 
 }
