@@ -15,6 +15,7 @@ public class PlayerController : MonoBehaviour
     private bool isGrounded;
     private SpriteRenderer spriteRenderer;
     private Animator animator;
+    private GameObject player;
 
     public GameObject SnowBall;
     public float SnowBallTimerDuration = 0.5f;
@@ -52,6 +53,7 @@ public class PlayerController : MonoBehaviour
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
+        player = GetComponent<GameObject>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb.inertia = 0;
     }
@@ -69,7 +71,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if(rb.velocity.y == 0)
+        if(rb.velocity.y <= 6f)
         {
             isGrounded = true;
             soundManager.StoppedJumping();
@@ -181,8 +183,7 @@ public class PlayerController : MonoBehaviour
     }
     void Die()
     {
-        Destroy(GameObject);
-        Scene.LoadScene(0);
+        Destroy(player);
     }
 
 }
