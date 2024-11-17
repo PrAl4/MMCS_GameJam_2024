@@ -9,6 +9,9 @@ TagManager:
   - BraidHitArea
   - SoundManager
   - Point
+  - BlueEnemy
+  - GreenEnemy
+  - PurpleEnemy
   layers:
   - Default
   - TransparentFX
