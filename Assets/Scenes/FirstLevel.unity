@@ -498,11 +498,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 519420031}
   _amountOfParallax: 0.9
---- !u!1 &322904272 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 2505073636766388664, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
-  m_PrefabInstance: {fileID: 3184998864890474460}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &456282170
 GameObject:
   m_ObjectHideFlags: 0
@@ -694,7 +689,6 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f66e2830e477a347af6dd56c723a86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camHelper: {fileID: 322904272}
 --- !u!82 &519420034
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1123,6 +1117,14 @@ PrefabInstance:
       propertyPath: m_TagString
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 3538217719749594493, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: _audioSource
+      value: 
+      objectReference: {fileID: 1502645726}
+    - target: {fileID: 3538217719749594493, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: _intervals.Array.data[0]._steps
+      value: 0.125
+      objectReference: {fileID: 0}
     - target: {fileID: 4441061528483850858, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1204,13 +1206,21 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 8300000, guid: 6a99e08310012d045be696166d644bfd, type: 3}
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[6].loop
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[6].name
       value: BaseSoundtrack
       objectReference: {fileID: 0}
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[7].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 1e8d960a94da68c44815e22e0afb36f5, type: 3}
+      objectReference: {fileID: 8300000, guid: 7ede4cb21e6933a458dcb45fad0fc678, type: 3}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[7].loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[7].name
       value: Mel1
@@ -1218,7 +1228,11 @@ PrefabInstance:
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[8].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 10537b5d84f9b2948be6fc4b9eedf557, type: 3}
+      objectReference: {fileID: 8300000, guid: 40d6fb2a65fc3894eb57d5ddc1be9ebf, type: 3}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[8].loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[8].name
       value: Mel2
@@ -1226,7 +1240,11 @@ PrefabInstance:
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[9].clip
       value: 
-      objectReference: {fileID: 8300000, guid: 071f0469b00960349825af883c875773, type: 3}
+      objectReference: {fileID: 8300000, guid: 43c6d0a6de2fa9d4ca426bb7dd1d21de, type: 3}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[9].loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[9].name
       value: Mel3
@@ -1234,7 +1252,11 @@ PrefabInstance:
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[10].clip
       value: 
-      objectReference: {fileID: 8300000, guid: ee5be540309189b4385f93c32c3b2a5b, type: 3}
+      objectReference: {fileID: 8300000, guid: c83d73cac2d603a45ba1df8c155d4160, type: 3}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[10].loop
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: sounds.Array.data[10].name
       value: Mel4
@@ -5453,7 +5475,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.386928
+      value: 5.15
       objectReference: {fileID: 0}
     - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5491,6 +5513,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 821076122789080468, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4658848030864310039, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
       propertyPath: m_Name
       value: RedEnemy
@@ -5499,10 +5525,18 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
-    m_RemovedComponents: []
+    - target: {fileID: 5175639267157367248, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: speed
+      value: 4
+      objectReference: {fileID: 0}
+    m_RemovedComponents:
+    - {fileID: 5175639267157367248, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
-    m_AddedComponents: []
+    m_AddedComponents:
+    - targetCorrespondingSourceObject: {fileID: 4658848030864310039, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1634105754}
   m_SourcePrefab: {fileID: 100100000, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
 --- !u!1 &1467241148
 GameObject:
@@ -5588,6 +5622,11 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!82 &1502645726 stripped
+AudioSource:
+  m_CorrespondingSourceObject: {fileID: 6819473708879807372, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+  m_PrefabInstance: {fileID: 590958544}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &1516234500
 GameObject:
   m_ObjectHideFlags: 0
@@ -5867,6 +5906,24 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _mainCamera: {fileID: 519420031}
   _amountOfParallax: 0.5
+--- !u!1 &1634105748 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 4658848030864310039, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+  m_PrefabInstance: {fileID: 1432205826}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &1634105754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1634105748}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a9d785ff2b0cd409b4aed3961552ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
 --- !u!1 &1690781863
 GameObject:
   m_ObjectHideFlags: 0
@@ -6764,6 +6821,10 @@ PrefabInstance:
     - target: {fileID: 5161300404852458687, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
       propertyPath: m_IsActive
       value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 5161300404852458687, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
+      propertyPath: m_TagString
+      value: Player
       objectReference: {fileID: 0}
     - target: {fileID: 7378588718696125922, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
       propertyPath: weaponKey
