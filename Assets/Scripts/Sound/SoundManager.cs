@@ -2,12 +2,14 @@ using UnityEngine.Audio;
 using UnityEngine;
 using System;
 using System.Collections;
+using UnityEngine.Rendering;
 
 public class SoundManager : MonoBehaviour
 {
     public Sound[] sounds;
     private bool isCoroutine = false;
     private bool jump = false;
+    int currentMelody;
     int nextMelody;
     bool changeSoundtrack = false;
     // Start is called before the first frame update
@@ -95,21 +97,67 @@ public class SoundManager : MonoBehaviour
     {
         changeSoundtrack = true;
         nextMelody = weaponKey;
+        StartCoroutine(VolumeFade());
     }
     public void ChangeMelody()
     {
         if (changeSoundtrack)
         {
+            AudioSource source = null;
             StopAllSoundtrack();
             if (nextMelody == 1)
-                Play("Mel4");
+                source = GetSource("Mel4");
             if (nextMelody == 2)
-                Play("Mel3");
+                source = GetSource("Mel3");
             if (nextMelody == 3)
-                Play("Mel1");
+                source = GetSource("Mel1");
             if (nextMelody == 4)
-                Play("Mel2");
+                source = GetSource("Mel2");
+
+
+            source.Play();
+            StartCoroutine(VolumeIncrease(source)); 
             changeSoundtrack = false;
+            currentMelody = nextMelody;
+        }
+    }
+    private AudioSource GetSource(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+            return null;
+        return s.source;
+    }
+    IEnumerator VolumeFade()
+    {
+        float timeToFade = 0.25f;
+        float timeElapsed = 0;
+        AudioSource currentSource = null;
+        while (timeElapsed < timeToFade)
+        {
+            if (currentMelody == 1)
+                currentSource = GetSource("Mel4");
+            if (currentMelody == 2)
+                currentSource = GetSource("Mel3");
+            if (currentMelody == 3)
+                currentSource = GetSource("Mel2");
+            if (currentMelody == 4)
+                currentSource = GetSource("Mel1");
+
+            currentSource.volume = Mathf.Lerp(0, 1, timeElapsed/ timeToFade);
+            timeElapsed += Time.deltaTime;  
+            yield return null;
+        }
+    }
+    IEnumerator VolumeIncrease(AudioSource source)
+    {
+        float timeToFade = 0.25f;
+        float timeElapsed = 0;
+        while (timeElapsed < timeToFade)
+        {
+            source.volume = Mathf.Lerp(0, 1, timeElapsed / timeToFade);
+            timeElapsed += Time.deltaTime;
+            yield return null;
         }
     }
 }
