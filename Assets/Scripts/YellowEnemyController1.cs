@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-public class RedEnemyController : MonoBehaviour
+public class YellowEnemyController : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
     private Rigidbody2D rigidbody2d;
@@ -15,7 +15,7 @@ public class RedEnemyController : MonoBehaviour
         spriterenderer = GetComponent<SpriteRenderer>();
         spriterenderer.flipX = false;
         health = GetComponent<Health>();
-
+        
     }
     void Start()
     {
@@ -39,9 +39,7 @@ public class RedEnemyController : MonoBehaviour
         else
         {
             PlayerController weaponKey = collision.gameObject.GetComponent<PlayerController>();
-            if (weaponKey.WeaponKey == 2)
-            {
-                Debug.Log(health.CurrentHealth);
+            if (weaponKey.WeaponKey == 2){
                 health.TakeDamage(1f);
             }
             else

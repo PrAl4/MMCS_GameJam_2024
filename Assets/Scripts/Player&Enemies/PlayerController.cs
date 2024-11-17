@@ -166,24 +166,26 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, 7f);
+        rb.velocity = new Vector2(rb.velocity.x, 9f);
         animator.SetBool("IsJumping", true);
         soundManager.Jumping();
     }
-    void CollisionEnter2D(Collision collision)
+    void CollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "RedEnemy")
         {
-            if (weaponKey == 2)
+            if (WeaponKey == 2)
             {
-                Destroy(collision.gameObject);
+            
+                Debug.Log(gameObject);
+                GameObject.Destroy(gameObject);
             }
             Die();
         }
     }
     void Die()
     {
-        Destroy(player);
+        Destroy(gameObject);
     }
 
 }
