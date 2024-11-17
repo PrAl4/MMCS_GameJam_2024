@@ -2,15 +2,14 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SnowBallController : MonoBehaviour
+public class LaserController : MonoBehaviour
 {
     [SerializeField] int direction;
     private float speed = 5f;
     private SpriteRenderer spriteRenderer;
-
     void Start()
     {
-
+        
     }
 
     public void setDirection(int direction)
@@ -22,7 +21,8 @@ public class SnowBallController : MonoBehaviour
             spriteRenderer = GetComponent<SpriteRenderer>();
             spriteRenderer.flipX = true;
         }
-    } 
+    }
+   
     void Update()
     {
         Vector3 newPosition = transform.position;
@@ -32,15 +32,13 @@ public class SnowBallController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("BlueEnemy"))
+        if (other.CompareTag("PurpleEnemy"))
         {
-            // тут урон по Blue Enemy
+            // тут урон по Purple Enemy
         }
         if (!other.CompareTag("BraidHitArea") && !other.CompareTag("Player"))
         {
-            Debug.Log(other.gameObject);
             Destroy(gameObject);
         }
     }
-
 }

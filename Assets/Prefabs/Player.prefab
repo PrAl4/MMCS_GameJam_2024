@@ -136,6 +136,7 @@ MonoBehaviour:
   speed: 3
   weaponKey: 0
   SnowBall: {fileID: 1594727329427904245, guid: 6dd7ba59e4ad9be49a0d04d33f8f802a, type: 3}
+  Laser: {fileID: 3739949662369531189, guid: 149eb53b6abdb6e4fb4d62656433f8dc, type: 3}
   SnowBallTimerDuration: 0.5
   BraidHitArea: {fileID: 7583501811830363402}
 --- !u!212 &6177746072990581687

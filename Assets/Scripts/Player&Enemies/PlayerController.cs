@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private GameObject player;
 
     public GameObject SnowBall;
+    public GameObject Laser;
     public float SnowBallTimerDuration = 0.5f;
     private bool snowBallTimerActive = false;
 
@@ -105,6 +106,15 @@ public class PlayerController : MonoBehaviour
                 GameObject instance = Instantiate(SnowBall, transform.position + new Vector3(0.5f * -dir, 0, 0), Quaternion.identity);
                 SnowBallController snowBall = instance.GetComponent<SnowBallController>();
                 snowBall.setDirection(-dir);
+            }
+            else if (WeaponKey == 4 && !snowBallTimerActive)
+            {
+
+                StartCoroutine(StartTimer());
+                int dir = 2 * (spriteRenderer.flipX ? 1 : 0) - 1;
+                GameObject instance = Instantiate(Laser, transform.position + new Vector3(0.5f * -dir, 0, 0), Quaternion.identity);
+                LaserController laser = instance.GetComponent<LaserController>();
+                laser.setDirection(-dir);
             }
         }
 
