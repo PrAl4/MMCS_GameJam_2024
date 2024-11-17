@@ -27,7 +27,7 @@ public class SoundManager : MonoBehaviour
     }
     void Update()
     {
-        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) & !jump )
+        if ((Input.GetKey(KeyCode.A) || Input.GetKey(KeyCode.D)) & !jump)
         {
             FootstepsCoroutine();
         }

@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
         WeaponKey = weaponKey;
         braidHitArea = BraidHitArea.GetComponent<BraidAreaTrigger>();
-       // soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
     void Update()
@@ -74,7 +74,7 @@ public class PlayerController : MonoBehaviour
         if (rb.velocity.y <= 0.001f)
         {
             isGrounded = true;
-           // soundManager.StoppedJumping();
+            soundManager.StoppedJumping();
         }
         else { isGrounded = false; }
 

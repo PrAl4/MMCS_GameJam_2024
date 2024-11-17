@@ -26,6 +26,8 @@ public class TipsManager : MonoBehaviour
     void UnlockNewTip() 
     {
         numberOfGunModes++;
+        if (numberOfGunModes == 1)
+            soundManager.PlaySoundtrack(playerController.WeaponKey);
     }
 
     public enum gunModes { Top, Right, Bottom, Left };

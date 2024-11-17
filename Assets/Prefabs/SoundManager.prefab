@@ -14,7 +14,7 @@ GameObject:
   - component: {fileID: 6819473708879807372}
   m_Layer: 0
   m_Name: SoundManager
-  m_TagString: Untagged
+  m_TagString: SoundManager
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
@@ -59,6 +59,60 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 0
+  - name: Braid
+    clip: {fileID: 8300000, guid: d0b8e6853d285014587ac5ea1dafed98, type: 3}
+    volume: 0.6
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Staff
+    clip: {fileID: 8300000, guid: 6a8ef38ed7d43eb40b1d14a92705c911, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: Jump
+    clip: {fileID: 8300000, guid: 1eb1f26f3ca463a4bab79f4051c7e4e8, type: 3}
+    volume: 0.3
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: ChangeWeapon
+    clip: {fileID: 8300000, guid: b93570e74b107f546b59ebbb3a9cf90f, type: 3}
+    volume: 0.5
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
+  - name: BaseSoundtrack
+    clip: {fileID: 8300000, guid: 6a99e08310012d045be696166d644bfd, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Mel1
+    clip: {fileID: 8300000, guid: 7ede4cb21e6933a458dcb45fad0fc678, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Mel2
+    clip: {fileID: 8300000, guid: 40d6fb2a65fc3894eb57d5ddc1be9ebf, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Mel3
+    clip: {fileID: 8300000, guid: 43c6d0a6de2fa9d4ca426bb7dd1d21de, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
+  - name: Mel4
+    clip: {fileID: 8300000, guid: c83d73cac2d603a45ba1df8c155d4160, type: 3}
+    volume: 1
+    pitch: 1
+    source: {fileID: 0}
+    loop: 1
 --- !u!114 &3538217719749594493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -72,9 +126,9 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   _bpm: 215
-  _audioSource: {fileID: 0}
+  _audioSource: {fileID: 6819473708879807372}
   _intervals:
-  - _steps: 0.25
+  - _steps: 0.125
     _trigger:
       m_PersistentCalls:
         m_Calls:

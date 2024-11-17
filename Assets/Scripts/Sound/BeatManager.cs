@@ -15,7 +15,7 @@ public class BeatManager : MonoBehaviour
         foreach (Intervals interval in _intervals)
         {
             float sampledTime = (_audioSource.timeSamples / (_audioSource.clip.frequency * interval.GetIntervalLength(_bpm)));
-            interval.CheckForNewInterval(sampledTime); 
+            interval.CheckForNewInterval(sampledTime);
         }
     }
     [System.Serializable]
@@ -36,7 +36,7 @@ public class BeatManager : MonoBehaviour
             if (Mathf.FloorToInt(interval) != _lastInterval) 
             {
                 _lastInterval = Mathf.FloorToInt(interval);
-                Debug.Log("trigger "+ interval);
+                //Debug.Log("trigger "+ interval);
                 _trigger.Invoke();
             }
         }
