@@ -8,6 +8,8 @@ public class SoundManager : MonoBehaviour
     public Sound[] sounds;
     private bool isCoroutine = false;
     private bool jump = false;
+    int nextMelody;
+    bool changeSoundtrack = false;
     // Start is called before the first frame update
     void Awake()
     {
@@ -17,8 +19,9 @@ public class SoundManager : MonoBehaviour
             s.source.clip = s.clip;
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
+            s.source.loop = s.loop;
         }
-        Play("BaseSoundtrack");
+        
     }
     void Update()
     {
@@ -45,7 +48,6 @@ public class SoundManager : MonoBehaviour
     }
     private void StopAllSoundtrack()
     {
-        Stop("BaseSoundtrack");
         Stop("Mel1");
         Stop("Mel2");
         Stop("Mel3");
@@ -91,17 +93,23 @@ public class SoundManager : MonoBehaviour
     }
     public void PlaySoundtrack(int weaponKey)
     {
-        StopAllSoundtrack();
-        if (weaponKey == 0)
-            Play("BaseLayer");
-        if (weaponKey == 1)
-            Play("Mel4");
-        if (weaponKey == 2)
-            Play("Mel3");
-        if (weaponKey == 3)
-            Play("Mel1");
-        if (weaponKey == 4)
-            Play("Mel2");
-
+        changeSoundtrack = true;
+        nextMelody = weaponKey;
+    }
+    public void ChangeMelody()
+    {
+        if (changeSoundtrack)
+        {
+            StopAllSoundtrack();
+            if (nextMelody == 1)
+                Play("Mel4");
+            if (nextMelody == 2)
+                Play("Mel3");
+            if (nextMelody == 3)
+                Play("Mel1");
+            if (nextMelody == 4)
+                Play("Mel2");
+            changeSoundtrack = false;
+        }
     }
 }
