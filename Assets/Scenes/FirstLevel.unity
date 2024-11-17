@@ -5414,7 +5414,7 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.386928
+      value: 5.15
       objectReference: {fileID: 0}
     - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
       propertyPath: m_LocalPosition.y
@@ -5462,7 +5462,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 5175639267157367248, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
       propertyPath: speed
+<<<<<<< Updated upstream
       value: 30
+=======
+      value: 4
+>>>>>>> Stashed changes
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
