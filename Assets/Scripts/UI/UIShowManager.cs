@@ -24,12 +24,12 @@ public class UIShowManager : MonoBehaviour
 
     private void OnEnable()
     {
-        //+=IncreaseAmountOfGuns;
+        TakingWeaponScript.takingWeapon +=IncreaseAmountOfGuns;
     }
 
     private void OnDisable()
     {
-        //-=IncreaseAmountOfGuns;
+        TakingWeaponScript.takingWeapon -= IncreaseAmountOfGuns;
     }
 
     void IncreaseAmountOfGuns()

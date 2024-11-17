@@ -7,6 +7,8 @@ public class AnimMaterial : MonoBehaviour
     [SerializeField]
     Material mmaterial;
 
+    public int numOfClouds;
+
     private void OnEnable()
     {
 
@@ -17,9 +19,10 @@ public class AnimMaterial : MonoBehaviour
 
     }
 
-    void StartAniamtion()
+    void StartAniamtion(int num)
     {
-        StartCoroutine("Colorize");
+        if (num == numOfClouds)
+            StartCoroutine("Colorize");
     }
 
     IEnumerator Colorize()

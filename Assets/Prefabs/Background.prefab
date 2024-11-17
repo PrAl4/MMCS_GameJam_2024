@@ -114,6 +114,7 @@ GameObject:
   m_Component:
   - component: {fileID: 814334268469354671}
   - component: {fileID: 5639609468040375485}
+  - component: {fileID: 4941021095528697432}
   m_Layer: 0
   m_Name: BackgroundClouds2 (4)
   m_TagString: Untagged
@@ -156,7 +157,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -188,6 +189,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4941021095528697432
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 532885321826319638}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &572393048913035579
 GameObject:
   m_ObjectHideFlags: 0
@@ -198,6 +213,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2849477068431177228}
   - component: {fileID: 6984983018206229683}
+  - component: {fileID: 7646789641311395888}
   m_Layer: 0
   m_Name: BackgroundClouds1 (7)
   m_TagString: Untagged
@@ -240,7 +256,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -272,6 +288,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7646789641311395888
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 572393048913035579}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
+  numOfClouds: 4
 --- !u!1 &603810692077855266
 GameObject:
   m_ObjectHideFlags: 0
@@ -282,6 +312,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4177792081085671215}
   - component: {fileID: 5456164774403307667}
+  - component: {fileID: 2002566226917533473}
   m_Layer: 0
   m_Name: BackgroundClouds2 (9)
   m_TagString: Untagged
@@ -324,7 +355,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -356,6 +387,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2002566226917533473
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 603810692077855266}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &1015915325104482828
 GameObject:
   m_ObjectHideFlags: 0
@@ -366,6 +411,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5314902455051706879}
   - component: {fileID: 6153324307164890481}
+  - component: {fileID: 546813533118416824}
   m_Layer: 0
   m_Name: BackgroundClouds2 (6)
   m_TagString: Untagged
@@ -408,7 +454,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -440,6 +486,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &546813533118416824
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1015915325104482828}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &1158163703840428836
 GameObject:
   m_ObjectHideFlags: 0
@@ -450,6 +510,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8861089745553151305}
   - component: {fileID: 7702628466584024140}
+  - component: {fileID: 8073330978846452345}
   m_Layer: 0
   m_Name: BackgroundClouds2 (5)
   m_TagString: Untagged
@@ -492,7 +553,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -524,6 +585,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8073330978846452345
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1158163703840428836}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &1205110801980816192
 GameObject:
   m_ObjectHideFlags: 0
@@ -534,6 +609,7 @@ GameObject:
   m_Component:
   - component: {fileID: 154908121074068532}
   - component: {fileID: 5934893873310686456}
+  - component: {fileID: 1059468360358456536}
   m_Layer: 0
   m_Name: BackgroundClouds1 (1)
   m_TagString: Untagged
@@ -576,7 +652,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -608,6 +684,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1059468360358456536
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1205110801980816192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &1275915163940162122
 GameObject:
   m_ObjectHideFlags: 0
@@ -811,6 +901,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8279656328617434366}
   - component: {fileID: 8958569062730001004}
+  - component: {fileID: 1159670480384887294}
   m_Layer: 0
   m_Name: BackgroundClouds4 (7)
   m_TagString: Untagged
@@ -853,7 +944,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -885,6 +976,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1159670480384887294
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1971389639977989594}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &2642927250640018184
 GameObject:
   m_ObjectHideFlags: 0
@@ -1063,6 +1168,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5921795012365787328}
   - component: {fileID: 8407121192078379822}
+  - component: {fileID: 5462825818571533504}
   m_Layer: 0
   m_Name: BackgroundClouds4 (2)
   m_TagString: Untagged
@@ -1105,7 +1211,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1137,6 +1243,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &5462825818571533504
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3121536588843472320}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
+  numOfClouds: 2
 --- !u!1 &3228929855164755687
 GameObject:
   m_ObjectHideFlags: 0
@@ -1147,6 +1267,7 @@ GameObject:
   m_Component:
   - component: {fileID: 5324222702358072774}
   - component: {fileID: 7544469509440734316}
+  - component: {fileID: 8625052921999074846}
   m_Layer: 0
   m_Name: BackgroundClouds4 (9)
   m_TagString: Untagged
@@ -1189,7 +1310,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1221,6 +1342,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8625052921999074846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3228929855164755687}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &3308540287339355075
 GameObject:
   m_ObjectHideFlags: 0
@@ -1231,6 +1366,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9041794780333411161}
   - component: {fileID: 146960272524798039}
+  - component: {fileID: 33574696056383772}
   m_Layer: 0
   m_Name: BackgroundClouds1 (9)
   m_TagString: Untagged
@@ -1273,7 +1409,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1305,6 +1441,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &33574696056383772
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3308540287339355075}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
+  numOfClouds: 4
 --- !u!1 &3446495276456715946
 GameObject:
   m_ObjectHideFlags: 0
@@ -1399,6 +1549,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6027173495396163965}
   - component: {fileID: 3763417323456464131}
+  - component: {fileID: 7525700284210532680}
   m_Layer: 0
   m_Name: BackgroundClouds1 (5)
   m_TagString: Untagged
@@ -1441,7 +1592,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1473,6 +1624,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7525700284210532680
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3885234490305227682}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
+  numOfClouds: 4
 --- !u!1 &3942714989416818192
 GameObject:
   m_ObjectHideFlags: 0
@@ -1483,6 +1648,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8766122959056923406}
   - component: {fileID: 7742679397342433851}
+  - component: {fileID: 4116273525142862612}
   m_Layer: 0
   m_Name: BackgroundClouds4 (3)
   m_TagString: Untagged
@@ -1525,7 +1691,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1557,6 +1723,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &4116273525142862612
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3942714989416818192}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
+  numOfClouds: 2
 --- !u!1 &3994579791719641521
 GameObject:
   m_ObjectHideFlags: 0
@@ -1567,6 +1747,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7961090976667795009}
   - component: {fileID: 266988548936158165}
+  - component: {fileID: 8446646350615354939}
   m_Layer: 0
   m_Name: BackgroundClouds1 (6)
   m_TagString: Untagged
@@ -1609,7 +1790,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1641,6 +1822,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8446646350615354939
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 3994579791719641521}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
+  numOfClouds: 4
 --- !u!1 &4216806449157230775
 GameObject:
   m_ObjectHideFlags: 0
@@ -1651,6 +1846,7 @@ GameObject:
   m_Component:
   - component: {fileID: 984869497910254662}
   - component: {fileID: 1135295351978527292}
+  - component: {fileID: 8189736156948722660}
   m_Layer: 0
   m_Name: BackgroundClouds1 (3)
   m_TagString: Untagged
@@ -1693,7 +1889,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1725,6 +1921,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8189736156948722660
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4216806449157230775}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &4646828970217841401
 GameObject:
   m_ObjectHideFlags: 0
@@ -1819,6 +2029,7 @@ GameObject:
   m_Component:
   - component: {fileID: 6021819100734508254}
   - component: {fileID: 8841336406082591065}
+  - component: {fileID: 7201290929717654944}
   m_Layer: 0
   m_Name: BackgroundClouds2 (1)
   m_TagString: Untagged
@@ -1861,7 +2072,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -1893,6 +2104,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7201290929717654944
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5273846150634426907}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &5364157725064532197
 GameObject:
   m_ObjectHideFlags: 0
@@ -1987,6 +2212,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8762696204640229667}
   - component: {fileID: 7698129180751392872}
+  - component: {fileID: 8410906530123017879}
   m_Layer: 0
   m_Name: BackgroundClouds4 (1)
   m_TagString: Untagged
@@ -2029,7 +2255,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2061,6 +2287,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8410906530123017879
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5547256343324410175}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
+  numOfClouds: 2
 --- !u!1 &5645901112012207967
 GameObject:
   m_ObjectHideFlags: 0
@@ -2071,6 +2311,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3463089311853414026}
   - component: {fileID: 2168070412884104863}
+  - component: {fileID: 6661600588699831497}
   m_Layer: 0
   m_Name: BackgroundClouds2
   m_TagString: Untagged
@@ -2113,7 +2354,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2145,6 +2386,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6661600588699831497
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5645901112012207967}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &5927233028567648778
 GameObject:
   m_ObjectHideFlags: 0
@@ -2155,6 +2410,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4631167829706683239}
   - component: {fileID: 8423970979156172021}
+  - component: {fileID: 629877816325102240}
   m_Layer: 0
   m_Name: BackgroundClouds1
   m_TagString: Untagged
@@ -2197,7 +2453,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2229,6 +2485,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &629877816325102240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5927233028567648778}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &6019431285868349959
 GameObject:
   m_ObjectHideFlags: 0
@@ -2239,6 +2509,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4342364648614806778}
   - component: {fileID: 320028434139235537}
+  - component: {fileID: 8010498656045613911}
   m_Layer: 0
   m_Name: BackgroundClouds1 (4)
   m_TagString: Untagged
@@ -2281,7 +2552,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2313,6 +2584,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &8010498656045613911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6019431285868349959}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &6292357502584641603
 GameObject:
   m_ObjectHideFlags: 0
@@ -2323,6 +2608,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2250366141454223886}
   - component: {fileID: 7777252794834196296}
+  - component: {fileID: 9120831303943831926}
   m_Layer: 0
   m_Name: BackgroundClouds2 (7)
   m_TagString: Untagged
@@ -2365,7 +2651,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2397,6 +2683,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &9120831303943831926
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6292357502584641603}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &6360879772261694203
 GameObject:
   m_ObjectHideFlags: 0
@@ -2407,6 +2707,7 @@ GameObject:
   m_Component:
   - component: {fileID: 7778294736029680630}
   - component: {fileID: 29749576668492801}
+  - component: {fileID: 823105811130630196}
   m_Layer: 0
   m_Name: BackgroundClouds4 (5)
   m_TagString: Untagged
@@ -2449,7 +2750,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2481,6 +2782,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &823105811130630196
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6360879772261694203}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &6542363675494977747
 GameObject:
   m_ObjectHideFlags: 0
@@ -2575,6 +2890,7 @@ GameObject:
   m_Component:
   - component: {fileID: 2998997412928462771}
   - component: {fileID: 10757154920775813}
+  - component: {fileID: 2558435337498233960}
   m_Layer: 0
   m_Name: BackgroundClouds1 (2)
   m_TagString: Untagged
@@ -2617,7 +2933,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2649,6 +2965,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2558435337498233960
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6617351153629127878}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &6666396968675689147
 GameObject:
   m_ObjectHideFlags: 0
@@ -2659,6 +2989,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8379431329796013194}
   - component: {fileID: 4242884802794782402}
+  - component: {fileID: 2354382907861839990}
   m_Layer: 0
   m_Name: BackgroundClouds4 (8)
   m_TagString: Untagged
@@ -2701,7 +3032,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2733,6 +3064,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2354382907861839990
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6666396968675689147}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &6679875696332536943
 GameObject:
   m_ObjectHideFlags: 0
@@ -2743,6 +3088,7 @@ GameObject:
   m_Component:
   - component: {fileID: 9082833862466164248}
   - component: {fileID: 2819625650537368344}
+  - component: {fileID: 1518151998475063727}
   m_Layer: 0
   m_Name: BackgroundClouds2 (8)
   m_TagString: Untagged
@@ -2785,7 +3131,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -2817,6 +3163,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &1518151998475063727
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6679875696332536943}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &6738015479895423091
 GameObject:
   m_ObjectHideFlags: 0
@@ -2972,6 +3332,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1355096193388870476}
   - component: {fileID: 5959793431912458620}
+  - component: {fileID: 6715177903796757240}
   m_Layer: 0
   m_Name: BackgroundClouds4
   m_TagString: Untagged
@@ -3014,7 +3375,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3046,6 +3407,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6715177903796757240
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 6979215315389494928}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
+  numOfClouds: 2
 --- !u!1 &7517881562509223956
 GameObject:
   m_ObjectHideFlags: 0
@@ -3333,6 +3708,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4068026379256913142}
   - component: {fileID: 2340262007859453025}
+  - component: {fileID: 6340442883414246751}
   m_Layer: 0
   m_Name: BackgroundClouds2 (3)
   m_TagString: Untagged
@@ -3375,7 +3751,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3407,6 +3783,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &6340442883414246751
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7881491235616954443}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1
 --- !u!1 &7992886226387962164
 GameObject:
   m_ObjectHideFlags: 0
@@ -3417,6 +3807,7 @@ GameObject:
   m_Component:
   - component: {fileID: 8132206278878199712}
   - component: {fileID: 3576111630416570301}
+  - component: {fileID: 207089411496616429}
   m_Layer: 0
   m_Name: BackgroundClouds4 (6)
   m_TagString: Untagged
@@ -3459,7 +3850,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3491,6 +3882,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &207089411496616429
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 7992886226387962164}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  numOfClouds: 3
 --- !u!1 &8432364428034240752
 GameObject:
   m_ObjectHideFlags: 0
@@ -3501,6 +3906,7 @@ GameObject:
   m_Component:
   - component: {fileID: 4194320465510457418}
   - component: {fileID: 8614868205592993676}
+  - component: {fileID: 7340837685059042156}
   m_Layer: 0
   m_Name: BackgroundClouds4 (4)
   m_TagString: Untagged
@@ -3543,7 +3949,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3575,6 +3981,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &7340837685059042156
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8432364428034240752}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
+  numOfClouds: 2
 --- !u!1 &8470134789597650397
 GameObject:
   m_ObjectHideFlags: 0
@@ -3621,6 +4041,7 @@ GameObject:
   m_Component:
   - component: {fileID: 3558509228791911225}
   - component: {fileID: 6973614177571168067}
+  - component: {fileID: 2569846946346834598}
   m_Layer: 0
   m_Name: BackgroundClouds1 (8)
   m_TagString: Untagged
@@ -3663,7 +4084,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3695,6 +4116,20 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &2569846946346834598
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8549174090382465540}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
+  numOfClouds: 4
 --- !u!1 &8948240353950914486
 GameObject:
   m_ObjectHideFlags: 0
@@ -3789,6 +4224,7 @@ GameObject:
   m_Component:
   - component: {fileID: 1848817417232856353}
   - component: {fileID: 2740358678989121972}
+  - component: {fileID: 304871829117419994}
   m_Layer: 0
   m_Name: BackgroundClouds2 (2)
   m_TagString: Untagged
@@ -3831,7 +4267,7 @@ SpriteRenderer:
   m_RenderingLayerMask: 1
   m_RendererPriority: 0
   m_Materials:
-  - {fileID: 10754, guid: 0000000000000000f000000000000000, type: 0}
+  - {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
   m_StaticBatchInfo:
     firstSubMesh: 0
     subMeshCount: 0
@@ -3863,3 +4299,17 @@ SpriteRenderer:
   m_WasSpriteAssigned: 1
   m_MaskInteraction: 0
   m_SpriteSortPoint: 0
+--- !u!114 &304871829117419994
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 9066715081287460274}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 9970c29e127d50a4aa36940a4d0a000d, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mmaterial: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  numOfClouds: 1

@@ -20,7 +20,7 @@ Material:
   m_CorrespondingSourceObject: {fileID: 0}
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
-  m_Name: GrayScale
+  m_Name: Second_GrayScale 1
   m_Shader: {fileID: -6465566751694194690, guid: 5f1d8c8f8a24824458cf7840de8f94d5, type: 3}
   m_Parent: {fileID: 0}
   m_ModifiedSerializedProperties: 0
@@ -66,7 +66,7 @@ Material:
         m_Offset: {x: 0, y: 0}
     m_Ints: []
     m_Floats:
-    - _Distance: 0.79999954
+    - _Distance: 0
     - _Distanse: 0
     - _EnableExternalAlpha: 0
     m_Colors:

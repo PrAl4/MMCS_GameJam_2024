@@ -8,11 +8,14 @@ public class TakingWeaponScript : MonoBehaviour
     public PlayerController _player;
     [SerializeField] int _weaponNumber;
 
+    public static event Action takingWeapon;
+
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
             _player.WeaponKey = _weaponNumber;
+            takingWeapon?.Invoke();
             Destroy(gameObject);
         }
     }
