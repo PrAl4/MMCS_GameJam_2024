@@ -26,8 +26,7 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-        // Вставка вашего кода для смерти персонажа (например, уничтожение объекта, анимация)
-        Debug.Log("Персонаж погиб!");
+        
         Destroy(gameObject); 
     }
 

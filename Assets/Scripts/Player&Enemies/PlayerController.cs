@@ -168,5 +168,21 @@ public class PlayerController : MonoBehaviour
         animator.SetBool("IsJumping", true);
         soundManager.Jumping();
     }
+    void CollisionEnter2D(Collision collision)
+    {
+        if (collision.gameObject.tag == "RedEnemy")
+        {
+            if (weaponKey == 2)
+            {
+                Destroy(collision.gameObject);
+            }
+            Die();
+        }
+    }
+    void Die()
+    {
+        Destroy(GameObject);
+        Scene.LoadScene(0);
+    }
 
 }

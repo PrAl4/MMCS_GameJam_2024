@@ -5484,6 +5484,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 821076122789080468, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_Constraints
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 4658848030864310039, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
       propertyPath: m_Name
       value: RedEnemy
