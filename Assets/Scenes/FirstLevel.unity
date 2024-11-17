@@ -1640,13 +1640,16 @@ MonoBehaviour:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 1370659510}
-  m_Enabled: 1
+  m_Enabled: 0
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 10b97d4388ad20743a3c17262b279843, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
   weaponKey: 0
+  SnowBall: {fileID: 0}
+  SnowBallTimerDuration: 0.5
+  BraidHitArea: {fileID: 0}
 --- !u!50 &1370659515
 Rigidbody2D:
   serializedVersion: 4
@@ -1762,6 +1765,63 @@ Transform:
   - {fileID: 1467241149}
   m_Father: {fileID: 0}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!1001 &1432205826
+PrefabInstance:
+  m_ObjectHideFlags: 0
+  serializedVersion: 2
+  m_Modification:
+    serializedVersion: 3
+    m_TransformParent: {fileID: 0}
+    m_Modifications:
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: -3.386928
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: -2.4367328
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalPosition.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalRotation.w
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalRotation.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalRotation.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalRotation.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.x
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.y
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 158157746757923139, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_LocalEulerAnglesHint.z
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 4658848030864310039, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
+      propertyPath: m_Name
+      value: RedEnemy
+      objectReference: {fileID: 0}
+    m_RemovedComponents: []
+    m_RemovedGameObjects: []
+    m_AddedGameObjects: []
+    m_AddedComponents: []
+  m_SourcePrefab: {fileID: 100100000, guid: dbbdb82d29bfee84a89c43b40e06ced1, type: 3}
 --- !u!1 &1467241148
 GameObject:
   m_ObjectHideFlags: 0
@@ -2311,3 +2371,4 @@ SceneRoots:
   - {fileID: 1410262161}
   - {fileID: 1523229346}
   - {fileID: 1090073786}
+  - {fileID: 1432205826}

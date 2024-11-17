@@ -6,6 +6,7 @@ TagManager:
   tags:
   - IsGround
   - RedEnemy
+  - BraidHitArea
   layers:
   - Default
   - TransparentFX

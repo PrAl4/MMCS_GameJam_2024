@@ -16,9 +16,13 @@ public class PlayerController : MonoBehaviour
     private SpriteRenderer spriteRenderer;
     private Animator animator;
 
+    public GameObject SnowBall;
+    public float SnowBallTimerDuration = 0.5f;
+    private bool snowBallTimerActive = false;
+
     public GameObject BraidHitArea;
     BraidAreaTrigger braidHitArea;
-    public int WeaponKey    // 0 - без, 1 - коса, 2 - щит, 3 - посох, 4 - лазер
+    public int WeaponKey    //0 - без, 1 - коса, 2 - щит, 3 - посох, 4 - лазер. Менять каждый раз при переключении оружия.
     {
         get { return weaponKey; }
         set
@@ -27,7 +31,7 @@ public class PlayerController : MonoBehaviour
             animator.SetInteger("WeaponKey", weaponKey);
         }
     }
-    public bool IsAttack 
+    public bool IsAttack  //По сути только для удара косой
     {
         get { return isAttack; }
         set
@@ -75,24 +79,38 @@ public class PlayerController : MonoBehaviour
 
         if (Input.GetKeyDown(KeyCode.Mouse0) && isGrounded && !IsAttack)
         {
-            IsAttack = true;
             if (WeaponKey == 1)
             {
+                IsAttack = true;
                 List<GameObject> triggers = braidHitArea.GetTriggers();
                 foreach (GameObject trigger in triggers)
                 {
-                    Debug.Log(trigger);     // здесь будет наносится урон по RedEnemy
+                    Debug.Log(trigger);     //здесь будет наносится урон косой по RedEnemy. trigger - red enemy.
                 }
+            }
+            else if (WeaponKey == 3 && !snowBallTimerActive) {
+                StartCoroutine(StartTimer());
+                int dir = 2 * (spriteRenderer.flipX ? 1 : 0) - 1;
+                GameObject instance = Instantiate(SnowBall, transform.position + new Vector3(0.5f * -dir, 0, 0), Quaternion.identity);
+                SnowBallController snowBall = instance.GetComponent<SnowBallController>();
+                snowBall.setDirection(-dir);
             }
         }
 
         for (int i = 0; i < 4; i++)
         {
-            if (Input.GetKeyDown(KeyCode.Alpha1 + i))
+            if (Input.GetKeyDown(KeyCode.Alpha1 + i))   //смена оружия на 1, 2, 3, 4.
             {
                 WeaponKey = i + 1;
             }
         }
+    }
+
+    private IEnumerator StartTimer()
+    {
+        snowBallTimerActive = true;
+        yield return new WaitForSeconds(SnowBallTimerDuration);
+        snowBallTimerActive = false;
     }
 
     void FixedUpdate()
