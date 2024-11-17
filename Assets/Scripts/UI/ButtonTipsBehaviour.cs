@@ -7,19 +7,19 @@ public class ButtonTipsBehaviour : MonoBehaviour
 {
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1))
+        if (Input.GetKeyDown(KeyCode.Alpha1) && UIShowManager.curNumberOfGuns >= 1)
         {
             curGunMode = gunModes.Top;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2))
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && UIShowManager.curNumberOfGuns >= 2)
         {
             curGunMode = gunModes.Right;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3))
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && UIShowManager.curNumberOfGuns >= 3)
         {
             curGunMode = gunModes.Bottom;
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha4)) 
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && UIShowManager.curNumberOfGuns >= 4) 
         {
             curGunMode = gunModes.Left;
         }

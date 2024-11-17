@@ -183,7 +183,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &5582777219434093443
 RectTransform:
   m_ObjectHideFlags: 0
@@ -300,7 +300,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2865273372121884001
 RectTransform:
   m_ObjectHideFlags: 0
@@ -337,7 +337,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2933715483708336410
 RectTransform:
   m_ObjectHideFlags: 0
@@ -905,7 +905,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &4441601958812345315
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1246,7 +1246,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2599206129271923689
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1508,7 +1508,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &8594125774031427826
 RectTransform:
   m_ObjectHideFlags: 0
@@ -1696,7 +1696,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &7233218453714019895
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2038,7 +2038,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &3308797720336038002
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2180,6 +2180,16 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   WheelOfChoice: {fileID: 229790786880084800}
+  wheelButtons:
+  - {fileID: 8210177477249915528}
+  - {fileID: 4417415496740018671}
+  - {fileID: 730478753701106469}
+  - {fileID: 2485431749988636490}
+  gunTips:
+  - {fileID: 742787339053958363}
+  - {fileID: 6272051835894508911}
+  - {fileID: 513645604758259321}
+  - {fileID: 4711291018545129367}
 --- !u!114 &8934800390225118638
 MonoBehaviour:
   m_ObjectHideFlags: 0

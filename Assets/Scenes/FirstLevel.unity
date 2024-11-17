@@ -6890,6 +6890,14 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7450066660389910194, guid: 5604dc01646a3d84da5275709e115852, type: 3}
+      propertyPath: gunTips.Array.size
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7450066660389910194, guid: 5604dc01646a3d84da5275709e115852, type: 3}
+      propertyPath: wheelButtons.Array.size
+      value: 4
+      objectReference: {fileID: 0}
     - target: {fileID: 7658815726590575610, guid: 5604dc01646a3d84da5275709e115852, type: 3}
       propertyPath: m_Camera
       value: 

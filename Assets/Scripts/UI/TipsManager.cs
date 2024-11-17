@@ -13,10 +13,25 @@ public class TipsManager : MonoBehaviour
     [SerializeField]
     GameObject[] gunTipsEnhanced;
 
+    private void OnEnable()
+    {
+        UIShowManager.gunUp += UnlockNewTip;
+    }
+
+    private void OnDisable()
+    {
+        UIShowManager.gunUp -= UnlockNewTip;
+    }
+
+    void UnlockNewTip() 
+    {
+        numberOfGunModes++;
+    }
+
     public enum gunModes { Top, Right, Bottom, Left };
     public static gunModes curGunMode = gunModes.Top;
     gunModes oldGunMode = gunModes.Top;
-    private int numberOfGunModes = System.Enum.GetValues(typeof(gunModes)).Length;
+    private int numberOfGunModes = 0;
 
     private SoundManager soundManager;
     private void Start()
@@ -31,7 +46,7 @@ public class TipsManager : MonoBehaviour
             oldGunMode = curGunMode;
             SetNewActiveGun();
         }
-        if (UIShowManager.wheelIsActive) 
+        if (UIShowManager.wheelIsActive && numberOfGunModes >= 1) 
         {
             if (Input.GetKeyDown(KeyCode.E))
             {
@@ -76,7 +91,7 @@ public class TipsManager : MonoBehaviour
 
     void SetNewTips(int num)
     {
-        for (int i = 0; i < gunTipsEnhanced.Length; i++)
+        for (int i = 0; i < numberOfGunModes; i++)
         {
             if (i == num)
             {
