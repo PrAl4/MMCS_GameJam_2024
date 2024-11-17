@@ -5241,6 +5241,7 @@ MonoBehaviour:
   speed: 3
   weaponKey: 0
   SnowBall: {fileID: 0}
+  Laser: {fileID: 0}
   SnowBallTimerDuration: 0.5
   BraidHitArea: {fileID: 0}
 --- !u!50 &1370659515
