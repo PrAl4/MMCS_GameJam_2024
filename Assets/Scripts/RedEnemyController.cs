@@ -6,10 +6,14 @@ public class RedEnemyController : MonoBehaviour
     [SerializeField] private float speed = 2f;
     private Rigidbody2D rigidbody2d;
     private Vector2 direction = Vector2.left;
+    private SpriteRenderer spriterenderer;
 
     void Awake()
     {
         rigidbody2d = GetComponent<Rigidbody2D>();
+        spriterenderer = GetComponent<SpriteRenderer>();
+        spriterenderer.flipX = false;
+        
     }
     void Start()
     {
@@ -27,13 +31,14 @@ public class RedEnemyController : MonoBehaviour
         //Debug.Log(collision.gameObject.tag);
         if (collision.gameObject.tag == "Player")
         {
-
-            Destroy(collision.gameObject);
+            ChangeDirection();
+            
         }
     }
 
     void ChangeDirection()
     {
-        rigidbody2d.velocity = -speed*direction ;
+        direction = -direction;
+        spriterenderer.flipX = !(spriterenderer.flipX);
     }
 }
