@@ -1074,6 +1074,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: SoundManager
       objectReference: {fileID: 0}
+    - target: {fileID: 499346426374197295, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: m_TagString
+      value: SoundManager
+      objectReference: {fileID: 0}
     - target: {fileID: 4441061528483850858, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: m_LocalPosition.x
       value: 0
@@ -1113,6 +1117,26 @@ PrefabInstance:
     - target: {fileID: 4441061528483850858, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.size
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[2].clip
+      value: 
+      objectReference: {fileID: 8300000, guid: d0b8e6853d285014587ac5ea1dafed98, type: 3}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[2].name
+      value: Braid
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[2].pitch
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6354902582626230651, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+      propertyPath: sounds.Array.data[2].volume
+      value: 0.6
       objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []

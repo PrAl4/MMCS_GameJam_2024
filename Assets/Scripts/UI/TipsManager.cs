@@ -18,6 +18,12 @@ public class TipsManager : MonoBehaviour
     gunModes oldGunMode = gunModes.Top;
     private int numberOfGunModes = System.Enum.GetValues(typeof(gunModes)).Length;
 
+    private SoundManager soundManager;
+    private void Start()
+    {
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+    }
+
     private void Update()
     {
         if (oldGunMode != curGunMode)
@@ -36,7 +42,7 @@ public class TipsManager : MonoBehaviour
             {
                 TwistWheelLeft();
             }
-        }  
+        }
     }
 
     void TwistWheelRight()
@@ -46,6 +52,8 @@ public class TipsManager : MonoBehaviour
             curGunMode = 0;
         oldGunMode = curGunMode;
         SetNewActiveGun();
+
+        soundManager.PlayButtonSound();
     }
 
     void TwistWheelLeft()
@@ -55,6 +63,7 @@ public class TipsManager : MonoBehaviour
             curGunMode = (gunModes)(numberOfGunModes - 1);
         oldGunMode = curGunMode;
         SetNewActiveGun();
+        soundManager.PlayButtonSound();
     }
 
     void SetNewActiveGun()

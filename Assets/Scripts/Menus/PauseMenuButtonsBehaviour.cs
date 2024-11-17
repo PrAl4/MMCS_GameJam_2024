@@ -13,6 +13,12 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
     GameObject settingsMenu;
 
     MenuStates pauseMenuActive = MenuStates.Resume;
+    private SoundManager soundManager;
+
+    private void Start()
+    {
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+    }
 
     private void Update()
     {
@@ -34,6 +40,8 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
         Time.timeScale = 0.0f;
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+
+        soundManager.PlayButtonSound();
     }
 
     void ResumeGame() 
@@ -43,11 +51,14 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
         Time.timeScale = 1.0f;
         Cursor.visible = false;
         Cursor.lockState = CursorLockMode.Locked;
+
+        soundManager.PlayButtonSound();
     }
 
     public void ResumeGameButton() 
     {
         ResumeGame();
+        soundManager.PlayButtonSound();
     }
 
     public void SettingsJoinButton() 
@@ -55,6 +66,7 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
         pauseMenu.SetActive(false);
         settingsMenu.SetActive(true);
         pauseMenuActive = MenuStates.Settings;
+        soundManager.PlayButtonSound();
     }
 
     public void SettingsExitButton() 
@@ -62,10 +74,12 @@ public class PauseMenuButtonsBehaviour : MonoBehaviour
         pauseMenu.SetActive(true);
         settingsMenu.SetActive(false);
         pauseMenuActive = MenuStates.Pause;
+        soundManager.PlayButtonSound();
     }
 
     public void ExitButton() 
     {
+        soundManager.PlayButtonSound();
         SceneManager.LoadScene(0);
     }
 

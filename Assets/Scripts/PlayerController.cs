@@ -22,6 +22,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject BraidHitArea;
     BraidAreaTrigger braidHitArea;
+    private SoundManager soundManager;
     public int WeaponKey    //0 - без, 1 - коса, 2 - щит, 3 - посох, 4 - лазер. Менять каждый раз при переключении оружия.
     {
         get { return weaponKey; }
@@ -38,6 +39,8 @@ public class PlayerController : MonoBehaviour
         {
             isAttack = value;
             animator.SetBool("IsAttack", isAttack);
+            
+
         }
     }
 
@@ -61,6 +64,7 @@ public class PlayerController : MonoBehaviour
         Cursor.visible = false;
         WeaponKey = weaponKey;
         braidHitArea = BraidHitArea.GetComponent<BraidAreaTrigger>();
+        soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
     void Update()
@@ -82,6 +86,7 @@ public class PlayerController : MonoBehaviour
             if (WeaponKey == 1)
             {
                 IsAttack = true;
+                soundManager.Play("Braid");
                 List<GameObject> triggers = braidHitArea.GetTriggers();
                 foreach (GameObject trigger in triggers)
                 {
