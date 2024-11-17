@@ -24,10 +24,6 @@ public class SoundManager : MonoBehaviour
         {
             FootstepsCoroutine();
         }
-        else
-        {
-            //StopAllCoroutines();
-        }
     }
 
     // Update is called once per frame
