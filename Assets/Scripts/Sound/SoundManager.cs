@@ -18,6 +18,7 @@ public class SoundManager : MonoBehaviour
             s.source.volume = s.volume;
             s.source.pitch = s.pitch;
         }
+        Play("BaseSoundtrack");
     }
     void Update()
     {
@@ -34,6 +35,21 @@ public class SoundManager : MonoBehaviour
         if (s == null)
             return;
         s.source.Play();
+    }
+    public void Stop(string name)
+    {
+        Sound s = Array.Find(sounds, sound => sound.name == name);
+        if (s == null)
+            return;
+        s.source.Stop();
+    }
+    private void StopAllSoundtrack()
+    {
+        Stop("BaseSoundtrack");
+        Stop("Mel1");
+        Stop("Mel2");
+        Stop("Mel3");
+        Stop("Mel4");
     }
     public void PlayButtonSound()
     {
@@ -73,8 +89,19 @@ public class SoundManager : MonoBehaviour
     {
         jump = false;
     }
-    public void PlaySoundtrack()
+    public void PlaySoundtrack(int weaponKey)
     {
+        StopAllSoundtrack();
+        if (weaponKey == 0)
+            Play("BaseLayer");
+        if (weaponKey == 1)
+            Play("Mel4");
+        if (weaponKey == 2)
+            Play("Mel3");
+        if (weaponKey == 3)
+            Play("Mel1");
+        if (weaponKey == 4)
+            Play("Mel2");
 
     }
 }

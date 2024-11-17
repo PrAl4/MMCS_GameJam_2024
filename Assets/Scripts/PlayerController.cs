@@ -112,6 +112,7 @@ public class PlayerController : MonoBehaviour
             {
                 WeaponKey = i + 1;
                 soundManager.Play("ChangeWeapon");
+                soundManager.PlaySoundtrack(WeaponKey);
             }
         }
     }
