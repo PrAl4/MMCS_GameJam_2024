@@ -2,12 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class UIShowManager : MonoBehaviour
 {
     [SerializeField]
     GameObject WheelOfChoice;
 
-    bool wheelIsActive = false;
+    public static bool wheelIsActive = false;
 
     void Update()
     {

@@ -4888,7 +4888,6 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   speed: 3
-  weaponKey: 0
   SnowBall: {fileID: 0}
   SnowBallTimerDuration: 0.5
   BraidHitArea: {fileID: 0}
@@ -6388,6 +6387,10 @@ PrefabInstance:
       propertyPath: m_IsActive
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 8934800390225118638, guid: 5604dc01646a3d84da5275709e115852, type: 3}
+      propertyPath: playerController
+      value: 
+      objectReference: {fileID: 3184998864890474466}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -6479,6 +6482,17 @@ PrefabInstance:
       insertIndex: -1
       addedObject: {fileID: 1370659516}
   m_SourcePrefab: {fileID: 100100000, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
+--- !u!114 &3184998864890474466 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 7378588718696125922, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
+  m_PrefabInstance: {fileID: 3184998864890474460}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1859808285}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 10b97d4388ad20743a3c17262b279843, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1001 &3236714976708084501
 PrefabInstance:
   m_ObjectHideFlags: 0
