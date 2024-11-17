@@ -6,14 +6,22 @@ public class SnowBallController : MonoBehaviour
 {
     [SerializeField] int direction;
     private float speed = 5f;
+    private SpriteRenderer spriteRenderer;
+
     void Start()
     {
-        
+
     }
 
     public void setDirection(int direction)
     {
+        Debug.Log(direction);
         this.direction = direction;
+        if (direction == -1)
+        {
+            spriteRenderer = GetComponent<SpriteRenderer>();
+            spriteRenderer.flipX = true;
+        }
     } 
     void Update()
     {

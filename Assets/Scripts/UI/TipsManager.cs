@@ -54,6 +54,7 @@ public class TipsManager : MonoBehaviour
         SetNewActiveGun();
 
         soundManager.PlayButtonSound();
+        
     }
 
     void TwistWheelLeft()
@@ -70,6 +71,7 @@ public class TipsManager : MonoBehaviour
     {
         SetNewTips((int)curGunMode);
         playerController.WeaponKey = (int)curGunMode + 1;
+        soundManager.PlaySoundtrack(playerController.WeaponKey);
     }
 
     void SetNewTips(int num)
