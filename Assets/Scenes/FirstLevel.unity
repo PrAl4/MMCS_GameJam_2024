@@ -689,7 +689,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 4f66e2830e477a347af6dd56c723a86e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  camHelper: {fileID: 0}
+  camHelper: {fileID: 820087276}
 --- !u!82 &519420034
 AudioSource:
   m_ObjectHideFlags: 0
@@ -1339,6 +1339,11 @@ PrefabInstance:
     m_AddedGameObjects: []
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 2b7286fd81a05b24cb74018cb89032a9, type: 3}
+--- !u!1 &820087276 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 2505073636766388664, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
+  m_PrefabInstance: {fileID: 3184998864890474460}
+  m_PrefabAsset: {fileID: 0}
 --- !u!1 &912283417
 GameObject:
   m_ObjectHideFlags: 0
