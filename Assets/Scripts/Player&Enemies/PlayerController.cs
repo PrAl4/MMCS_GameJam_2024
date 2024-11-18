@@ -72,7 +72,7 @@ public class PlayerController : MonoBehaviour
 
     void Update()
     {
-        if (rb.velocity.y <= 0.001f)
+        if (rb.velocity.y <= 0.001f & rb.velocity.y >= -0.001f)
         {
             isGrounded = true;
             //soundManager.StoppedJumping();
@@ -184,8 +184,10 @@ public class PlayerController : MonoBehaviour
     }
     void CollisionEnter2D(Collision2D collision)
     {
-        if (collision.gameObject.tag == "RedEnemy")
+        //Debug.Log(collision.gameObject.tag);
+            if (collision.gameObject.tag == "RedEnemy" | collision.gameObject.tag == "BlueEnemy" | collision.gameObject.tag == "GreenEnemy" | collision.gameObject.tag == "PurpleEnemy")
         {
+            Debug.Log(collision.gameObject.tag);
             if (WeaponKey == 2)
             {
 
