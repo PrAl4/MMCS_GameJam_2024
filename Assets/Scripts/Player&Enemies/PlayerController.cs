@@ -3,12 +3,14 @@ using System.Collections.Generic;
 using Unity.VisualScripting;
 using UnityEngine;
 using System.Linq;
+using UnityEngine.SceneManagement;
 
 public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] float speed = 3f;
     [SerializeField] int weaponKey = 0;
+    [SerializeField] int _numberOfScene;
     private bool isAttack = false;
     private Rigidbody2D rb;
     private float move;
@@ -75,7 +77,7 @@ public class PlayerController : MonoBehaviour
         if (rb.velocity.y <= 0.001f & rb.velocity.y >= -0.001f)
         {
             isGrounded = true;
-            //soundManager.StoppedJumping();
+            soundManager.StoppedJumping();
         }
         else { isGrounded = false; }
 
@@ -94,13 +96,13 @@ public class PlayerController : MonoBehaviour
                 List<GameObject> triggers = braidHitArea.GetTriggers();
                 foreach (GameObject trigger in triggers)
                 {
-                    Debug.Log(trigger);     //здесь будет наносится урон косой по RedEnemy. trigger - red enemy.
+                   // Debug.Log(trigger);     //здесь будет наносится урон косой по RedEnemy. trigger - red enemy.
                 }
             }
             else if (WeaponKey == 3 && !snowBallTimerActive)
             {
 
-                //soundManager.Play("Staff");
+                soundManager.Play("Staff");
 
                 StartCoroutine(StartTimer());
                 int dir = 2 * (spriteRenderer.flipX ? 1 : 0) - 1;
@@ -111,7 +113,7 @@ public class PlayerController : MonoBehaviour
             else if (WeaponKey == 4 && !snowBallTimerActive)
             {
 
-                //soundManager.Play("Laser");
+                soundManager.Play("Laser");
 
                 StartCoroutine(StartTimer());
                 int dir = 2 * (spriteRenderer.flipX ? 1 : 0) - 1;
@@ -180,26 +182,22 @@ public class PlayerController : MonoBehaviour
         rb.velocity = new Vector2(rb.velocity.x, 9f);
         animator.SetBool("IsJumping", true);
         animator.SetBool("IsRuning", false);
-        // soundManager.Jumping();
+        soundManager.Jumping();
     }
     void CollisionEnter2D(Collision2D collision)
     {
-        //Debug.Log(collision.gameObject.tag);
             if (collision.gameObject.tag == "RedEnemy" | collision.gameObject.tag == "BlueEnemy" | collision.gameObject.tag == "GreenEnemy" | collision.gameObject.tag == "PurpleEnemy")
         {
-            Debug.Log(collision.gameObject.tag);
-            if (WeaponKey == 2)
+            if (WeaponKey == 2 & collision.gameObject.tag == "GreenEnemy")
             {
-
-                Debug.Log(gameObject);
-                GameObject.Destroy(gameObject);
+                GameObject.Destroy(collision.gameObject);
             }
             Die();
         }
     }
     void Die()
     {
-        Destroy(gameObject);
+         SceneManager.LoadScene(_numberOfScene);
     }
 
 }

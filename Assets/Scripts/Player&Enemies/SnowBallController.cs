@@ -15,7 +15,6 @@ public class SnowBallController : MonoBehaviour
 
     public void setDirection(int direction)
     {
-        Debug.Log(direction);
         this.direction = direction;
         if (direction == -1)
         {
@@ -34,11 +33,10 @@ public class SnowBallController : MonoBehaviour
     {
         if (other.CompareTag("BlueEnemy"))
         {
-            // тут урон по Blue Enemy
+            other.gameObject.GetComponent<Health>().TakeDamage(1f);
         }
         if (!other.CompareTag("BraidHitArea") && !other.CompareTag("Player"))
         {
-            Debug.Log(other.gameObject);
             Destroy(gameObject);
         }
     }

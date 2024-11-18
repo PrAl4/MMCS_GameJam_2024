@@ -130,7 +130,7 @@ public class SoundManager : MonoBehaviour
     }
     IEnumerator VolumeFade()
     {
-        float timeToFade = 0.25f;
+        float timeToFade = 0.5f;
         float timeElapsed = 0;
         AudioSource currentSource = null;
         while (timeElapsed < timeToFade)

@@ -7,6 +7,7 @@ public class LaserController : MonoBehaviour
     [SerializeField] int direction;
     private float speed = 5f;
     private SpriteRenderer spriteRenderer;
+
     void Start()
     {
         
@@ -14,7 +15,6 @@ public class LaserController : MonoBehaviour
 
     public void setDirection(int direction)
     {
-        Debug.Log(direction);
         this.direction = direction;
         if (direction == -1)
         {
@@ -34,7 +34,7 @@ public class LaserController : MonoBehaviour
     {
         if (other.CompareTag("PurpleEnemy"))
         {
-            // тут урон по Purple Enemy
+            other.gameObject.GetComponent<Health>().TakeDamage(1f);
         }
         if (!other.CompareTag("BraidHitArea") && !other.CompareTag("Player"))
         {

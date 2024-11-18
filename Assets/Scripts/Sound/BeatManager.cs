@@ -32,11 +32,9 @@ public class BeatManager : MonoBehaviour
 
         public void CheckForNewInterval(float interval)
         {
-            //interval = 1.6f;
             if (Mathf.FloorToInt(interval) != _lastInterval) 
             {
                 _lastInterval = Mathf.FloorToInt(interval);
-                //Debug.Log("trigger "+ interval);
                 _trigger.Invoke();
             }
         }

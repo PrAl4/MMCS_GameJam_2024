@@ -1,17 +1,19 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 public class RedEnemyController : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
     [SerializeField] private float leftCorner, rightCorner;
+    [SerializeField] int _numberOfScene;
     private Rigidbody2D rigidbody2d;
     private Vector2 direction = Vector2.left;
     private int _direction = 1;
     private SpriteRenderer spriterenderer;
     private Health health;
-    private float positionX;
- 
+    private float positionX; 
+
 
 
     void Awake()
@@ -28,7 +30,6 @@ public class RedEnemyController : MonoBehaviour
     {
         rigidbody2d.velocity = direction * speed *_direction;
         positionX = rigidbody2d.position.x;
-        Debug.Log(positionX);
 
 
     }
@@ -37,7 +38,6 @@ public class RedEnemyController : MonoBehaviour
 
     {
         rigidbody2d.velocity = direction * speed * _direction;
-        Debug.Log(positionX);
 
 
         if (rigidbody2d.position.x < positionX - leftCorner )
@@ -71,7 +71,8 @@ public class RedEnemyController : MonoBehaviour
             }
             else
             {
-                Destroy(collision.gameObject);
+                //Destroy(collision.gameObject);
+                SceneManager.LoadScene(_numberOfScene);
             }
         }
         
@@ -87,8 +88,6 @@ public class RedEnemyController : MonoBehaviour
     IEnumerator WaitOneSecond()
     {
         yield return new WaitForSeconds(3f);
-        // Code to execute after 1 second
-        Debug.Log("One second has passed!");
     }
 
 }

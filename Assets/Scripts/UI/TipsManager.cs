@@ -28,7 +28,6 @@ public class TipsManager : MonoBehaviour
         numberOfGunModes++;
         if (numberOfGunModes == 0)
             soundManager.PlaySoundtrack(playerController.WeaponKey);
-        Debug.Log(numberOfGunModes);
         
     }
 
@@ -41,7 +40,6 @@ public class TipsManager : MonoBehaviour
     private void Start()
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
-        Debug.Log(numberOfGunModes);
     }
 
     private void Update()

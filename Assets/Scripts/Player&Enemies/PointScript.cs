@@ -5,7 +5,7 @@ using UnityEngine;
 public class PointScript : MonoBehaviour
 {
 
-    int score = 0;
+    public static int score = 0;
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
