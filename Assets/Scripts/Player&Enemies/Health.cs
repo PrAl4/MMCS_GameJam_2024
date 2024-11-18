@@ -5,6 +5,7 @@ using UnityEngine;
 public class Health : MonoBehaviour
 {
     [SerializeField] public float maxHealth = 5f;
+    public PlayerController _player;
     private float currentHealth;
     public float transitionTime = 1f; // Время перехода
     private Color originalColor;
@@ -12,6 +13,7 @@ public class Health : MonoBehaviour
     public SpriteRenderer spriteRenderer;
     private Rigidbody2D rb;
     private Vector2 vector;
+
 
     public float CurrentHealth
     {
@@ -29,7 +31,23 @@ public class Health : MonoBehaviour
         spriteRenderer = GetComponent<SpriteRenderer>();
         originalColor = spriteRenderer.color;
         rb = GetComponent<Rigidbody2D>();
+        
+    }
 
+   
+
+    private void OnTriggerStay2D(Collider2D collision)
+    {
+        if (collision.gameObject.tag == "BraidHitArea")
+        {
+            if (_player.IsAttack)
+            {
+                if (this.gameObject.tag == "RedEnemy")
+                {
+                    TakeDamage(1f);
+                }
+            }
+        }
     }
 
     public void TakeDamage(float damage)
