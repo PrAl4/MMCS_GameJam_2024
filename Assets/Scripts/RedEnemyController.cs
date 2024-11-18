@@ -9,6 +9,11 @@ public class RedEnemyController : MonoBehaviour
     private SpriteRenderer spriterenderer;
     private Health health;
     private float positionX;
+    private bool isChecked;
+
+
+    
+
 
     void Awake()
     {
@@ -16,31 +21,32 @@ public class RedEnemyController : MonoBehaviour
         spriterenderer = GetComponent<SpriteRenderer>();
         spriterenderer.flipX = false;
         health = GetComponent<Health>();
+       
 
     }
     void Start()
     {
         rigidbody2d.velocity = direction * speed;
         positionX = rigidbody2d.position.x;
+        Check();
+   
+
     }
 
     void Update()
 
     {
         rigidbody2d.velocity = direction * speed;
-        
-
-
 
     }
     void FixedUpdate()
     {
-        StuckCheck(positionX);
-        positionX = rigidbody2d.position.x;
+        Check();
     }
+    
     void OnCollisionEnter2D(Collision2D collision)
     {
-        Debug.Log(rigidbody2d.velocity.x);
+        
 
         if (collision.gameObject.tag == "Player")
         {
@@ -58,22 +64,53 @@ public class RedEnemyController : MonoBehaviour
         {
             if (!(rigidbody2d.velocity.x <= 1.5f & rigidbody2d.velocity.x >= -1.5f))
             {
+                //Debug.Log(true);
                 ChangeDirection();
+                
 
             }
         }
     }
-    void StuckCheck(float positionX)
+    
+    void Check()
     {
-        if (rigidbody2d.position.x == positionX)
+        
+            if (WaitForASecond())
+            {
+                ChangeDirection();
+            }
+        
+    }
+    bool Check2(float x)
+    {
+        if (rigidbody2d.position.x == x)
         {
-            ChangeDirection();
+            return isChecked =true;
         }
+        else { return isChecked = false; }
     }
 
     void ChangeDirection()
     {
         direction = -direction;
         spriterenderer.flipX = !(spriterenderer.flipX);
+    }
+    public bool WaitForASecond()
+    {
+        float x = rigidbody2d.position.x;
+        WaitOneSecond(x);
+        return isChecked;
+        
+    }
+
+    IEnumerator WaitOneSecond(float x)
+    {
+
+        yield return new WaitForSeconds(1f);
+        Check2(x);
+        
+
+        // Code to execute after 1 second
+
     }
 }
