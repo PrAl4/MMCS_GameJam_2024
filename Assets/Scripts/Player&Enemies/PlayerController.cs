@@ -18,6 +18,7 @@ public class PlayerController : MonoBehaviour
     private GameObject player;
 
     public GameObject SnowBall;
+    public GameObject Laser;
     public float SnowBallTimerDuration = 0.5f;
     private bool snowBallTimerActive = false;
 
@@ -74,7 +75,7 @@ public class PlayerController : MonoBehaviour
         if (rb.velocity.y <= 0.001f)
         {
             isGrounded = true;
-            soundManager.StoppedJumping();
+            //soundManager.StoppedJumping();
         }
         else { isGrounded = false; }
 
@@ -99,13 +100,24 @@ public class PlayerController : MonoBehaviour
             else if (WeaponKey == 3 && !snowBallTimerActive)
             {
 
-                soundManager.Play("Staff");
+                //soundManager.Play("Staff");
 
                 StartCoroutine(StartTimer());
                 int dir = 2 * (spriteRenderer.flipX ? 1 : 0) - 1;
                 GameObject instance = Instantiate(SnowBall, transform.position + new Vector3(0.5f * -dir, 0, 0), Quaternion.identity);
                 SnowBallController snowBall = instance.GetComponent<SnowBallController>();
                 snowBall.setDirection(-dir);
+            }
+            else if (WeaponKey == 4 && !snowBallTimerActive)
+            {
+
+                //soundManager.Play("Laser");
+
+                StartCoroutine(StartTimer());
+                int dir = 2 * (spriteRenderer.flipX ? 1 : 0) - 1;
+                GameObject instance = Instantiate(Laser, transform.position + new Vector3(0.5f * -dir, 0, 0), Quaternion.identity);
+                LaserController laser = instance.GetComponent<LaserController>();
+                laser.setDirection(-dir);
             }
         }
 
