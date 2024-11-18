@@ -15,6 +15,7 @@ GameObject:
   - component: {fileID: 9000299426774518017}
   - component: {fileID: 2647892486646891697}
   - component: {fileID: 6703017022413504754}
+  - component: {fileID: -7440790410339409475}
   m_Layer: 0
   m_Name: OneRedEnemy
   m_TagString: RedEnemy
@@ -294,3 +295,18 @@ AudioSource:
     m_PreInfinity: 2
     m_PostInfinity: 2
     m_RotationOrder: 4
+--- !u!114 &-7440790410339409475
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 4043023379640124801}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 67a9d785ff2b0cd409b4aed3961552ab, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  speed: 2
+  leftCorner: 3
+  rightCorner: 3

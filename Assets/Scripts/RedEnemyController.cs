@@ -4,15 +4,14 @@ using UnityEngine;
 public class RedEnemyController : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
+    [SerializeField] private float leftCorner, rightCorner;
     private Rigidbody2D rigidbody2d;
     private Vector2 direction = Vector2.left;
+    private int _direction = 1;
     private SpriteRenderer spriterenderer;
     private Health health;
     private float positionX;
-    private bool isChecked;
-
-
-    
+ 
 
 
     void Awake()
@@ -21,28 +20,43 @@ public class RedEnemyController : MonoBehaviour
         spriterenderer = GetComponent<SpriteRenderer>();
         spriterenderer.flipX = false;
         health = GetComponent<Health>();
+        
        
 
     }
     void Start()
     {
-        rigidbody2d.velocity = direction * speed;
+        rigidbody2d.velocity = direction * speed *_direction;
         positionX = rigidbody2d.position.x;
-        Check();
-   
+        Debug.Log(positionX);
+
 
     }
 
-    void Update()
-
-    {
-        rigidbody2d.velocity = direction * speed;
-
-    }
     void FixedUpdate()
+
     {
-        Check();
+        rigidbody2d.velocity = direction * speed * _direction;
+        Debug.Log(positionX);
+
+
+        if (rigidbody2d.position.x < positionX - leftCorner )
+        {
+            _direction = -1;
+            spriterenderer.flipX = true;
+
+        }
+        if (rigidbody2d.position.x > positionX + rightCorner)
+        {
+            _direction = 1;
+            spriterenderer.flipX = false;
+
+
+
+        }
+
     }
+    
     
     void OnCollisionEnter2D(Collision2D collision)
     {
@@ -60,57 +74,21 @@ public class RedEnemyController : MonoBehaviour
                 Destroy(collision.gameObject);
             }
         }
-        else
-        {
-            if (!(rigidbody2d.velocity.x <= 1.5f & rigidbody2d.velocity.x >= -1.5f))
-            {
-                //Debug.Log(true);
-                ChangeDirection();
-                
-
-            }
-        }
+        
     }
+   
     
-    void Check()
-    {
-        
-            if (WaitForASecond())
-            {
-                ChangeDirection();
-            }
-        
-    }
-    bool Check2(float x)
-    {
-        if (rigidbody2d.position.x == x)
-        {
-            return isChecked =true;
-        }
-        else { return isChecked = false; }
-    }
 
     void ChangeDirection()
     {
         direction = -direction;
         spriterenderer.flipX = !(spriterenderer.flipX);
     }
-    public bool WaitForASecond()
+    IEnumerator WaitOneSecond()
     {
-        float x = rigidbody2d.position.x;
-        WaitOneSecond(x);
-        return isChecked;
-        
-    }
-
-    IEnumerator WaitOneSecond(float x)
-    {
-
-        yield return new WaitForSeconds(1f);
-        Check2(x);
-        
-
+        yield return new WaitForSeconds(3f);
         // Code to execute after 1 second
-
+        Debug.Log("One second has passed!");
     }
+
 }
