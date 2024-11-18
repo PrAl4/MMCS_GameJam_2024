@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.Rendering;
 using UnityEngine.SceneManagement;
 
 public class MainMenuButtonsBehaviour : MonoBehaviour
@@ -9,6 +10,12 @@ public class MainMenuButtonsBehaviour : MonoBehaviour
     GameObject mainMenu;
     [SerializeField]
     GameObject settingsMenu;
+
+    private void Start()
+    {
+        Cursor.visible = true;
+        Cursor.lockState = CursorLockMode.None;
+    }
 
     public void StartGameButton()
     {

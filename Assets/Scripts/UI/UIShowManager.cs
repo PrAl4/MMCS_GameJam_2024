@@ -22,21 +22,32 @@ public class UIShowManager : MonoBehaviour
 
     private SoundManager soundManager;
 
+    private int oldNumber = 0;
+
     private void OnEnable()
     {
         TakingWeaponScript.takingWeapon +=IncreaseAmountOfGuns;
+        RedEnemyController.diePlayer += DecreaseAmountOfGuns;
     }
 
     private void OnDisable()
     {
         TakingWeaponScript.takingWeapon -= IncreaseAmountOfGuns;
+        RedEnemyController.diePlayer -= DecreaseAmountOfGuns;
     }
 
     void IncreaseAmountOfGuns(int n)
     {
+        Debug.Log(curNumberOfGuns);
+        oldNumber = curNumberOfGuns;
         curNumberOfGuns++;
         gunUp?.Invoke();
         ShowNewTips();
+    }
+
+    void DecreaseAmountOfGuns()
+    {
+        curNumberOfGuns = oldNumber;
     }
 
     void ShowNewTips() 

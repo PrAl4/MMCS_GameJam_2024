@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,8 +13,9 @@ public class RedEnemyController : MonoBehaviour
     private int _direction = 1;
     private SpriteRenderer spriterenderer;
     private Health health;
-    private float positionX; 
+    private float positionX;
 
+    public static event Action diePlayer;
 
 
     void Awake()
@@ -72,6 +74,7 @@ public class RedEnemyController : MonoBehaviour
             else
             {
                 //Destroy(collision.gameObject);
+                diePlayer?.Invoke();
                 SceneManager.LoadScene(_numberOfScene);
             }
         }

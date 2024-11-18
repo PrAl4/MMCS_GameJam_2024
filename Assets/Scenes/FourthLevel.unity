@@ -4806,6 +4806,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OneRedEnemy (2)
       objectReference: {fileID: 0}
+    - target: {fileID: 5953897864050836005, guid: ca9ed30ab2f622348b0f3a7b5741e241, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 8923869062646424445, guid: ca9ed30ab2f622348b0f3a7b5741e241, type: 3}
       propertyPath: m_LocalPosition.x
       value: -3.9956398
@@ -4999,6 +5003,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1748675650}
     m_Modifications:
+    - target: {fileID: 2014614071251819948, guid: ef2499592015ee144b156f073daa15e6, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 2781867879049415295, guid: ef2499592015ee144b156f073daa15e6, type: 3}
       propertyPath: m_Name
       value: BlueEnemy (1)
@@ -5207,6 +5215,10 @@ PrefabInstance:
       propertyPath: rightCorner
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5015261320750706120, guid: b1816379191d1ef409098a9f6c116a56, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 6297295360717033454, guid: b1816379191d1ef409098a9f6c116a56, type: 3}
       propertyPath: m_LocalPosition.x
       value: -37.520283
@@ -5467,6 +5479,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OneRedEnemy (1)
       objectReference: {fileID: 0}
+    - target: {fileID: 5953897864050836005, guid: ca9ed30ab2f622348b0f3a7b5741e241, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 8923869062646424445, guid: ca9ed30ab2f622348b0f3a7b5741e241, type: 3}
       propertyPath: m_LocalPosition.x
       value: -22.660912
@@ -13592,6 +13608,10 @@ PrefabInstance:
       propertyPath: rightCorner
       value: 1.5
       objectReference: {fileID: 0}
+    - target: {fileID: 5015261320750706120, guid: b1816379191d1ef409098a9f6c116a56, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 6297295360717033454, guid: b1816379191d1ef409098a9f6c116a56, type: 3}
       propertyPath: m_LocalPosition.x
       value: -23.472385
@@ -13744,6 +13764,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7003456819500974400, guid: 37907fcb7270a6242a0fe7382ddf1e02, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 9106628389592674101, guid: 37907fcb7270a6242a0fe7382ddf1e02, type: 3}
       propertyPath: leftCorner
       value: 2
@@ -13860,6 +13884,10 @@ PrefabInstance:
     serializedVersion: 3
     m_TransformParent: {fileID: 1748675650}
     m_Modifications:
+    - target: {fileID: 2014614071251819948, guid: ef2499592015ee144b156f073daa15e6, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 2781867879049415295, guid: ef2499592015ee144b156f073daa15e6, type: 3}
       propertyPath: m_Name
       value: BlueEnemy
@@ -14036,6 +14064,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7003456819500974400, guid: 37907fcb7270a6242a0fe7382ddf1e02, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 9106628389592674101, guid: 37907fcb7270a6242a0fe7382ddf1e02, type: 3}
       propertyPath: leftCorner
       value: 1.5
@@ -14168,6 +14200,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7003456819500974400, guid: 37907fcb7270a6242a0fe7382ddf1e02, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -14241,6 +14277,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OneRedEnemy
       objectReference: {fileID: 0}
+    - target: {fileID: 5953897864050836005, guid: ca9ed30ab2f622348b0f3a7b5741e241, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 8923869062646424445, guid: ca9ed30ab2f622348b0f3a7b5741e241, type: 3}
       propertyPath: m_LocalPosition.x
       value: -48.13314
@@ -14429,6 +14469,10 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6177746072990581687, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
       propertyPath: m_SortingOrder
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 7378588718696125922, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
+      propertyPath: _numberOfScene
       value: 4
       objectReference: {fileID: 0}
     - target: {fileID: 7914930912667272851, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
@@ -14657,6 +14701,10 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 7003456819500974400, guid: 37907fcb7270a6242a0fe7382ddf1e02, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 9106628389592674101, guid: 37907fcb7270a6242a0fe7382ddf1e02, type: 3}
       propertyPath: leftCorner
       value: 5
@@ -14691,6 +14739,10 @@ PrefabInstance:
       propertyPath: rightCorner
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 5015261320750706120, guid: b1816379191d1ef409098a9f6c116a56, type: 3}
+      propertyPath: _player
+      value: 
+      objectReference: {fileID: 1884532868}
     - target: {fileID: 6297295360717033454, guid: b1816379191d1ef409098a9f6c116a56, type: 3}
       propertyPath: m_LocalPosition.x
       value: -43.713142
