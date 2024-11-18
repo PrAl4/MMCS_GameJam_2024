@@ -32,7 +32,7 @@ public class UIShowManager : MonoBehaviour
         TakingWeaponScript.takingWeapon -= IncreaseAmountOfGuns;
     }
 
-    void IncreaseAmountOfGuns()
+    void IncreaseAmountOfGuns(int n)
     {
         curNumberOfGuns++;
         gunUp?.Invoke();
@@ -51,6 +51,7 @@ public class UIShowManager : MonoBehaviour
     private void Start()
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        ShowNewTips();
     }
 
     void Update()

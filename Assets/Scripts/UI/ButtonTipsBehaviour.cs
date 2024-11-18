@@ -10,7 +10,6 @@ public class ButtonTipsBehaviour : MonoBehaviour
         if (Input.GetKeyDown(KeyCode.Alpha1) && UIShowManager.curNumberOfGuns >= 1)
         {
             curGunMode = gunModes.Top;
-            Debug.Log(1);
         }
         else if (Input.GetKeyDown(KeyCode.Alpha2) && UIShowManager.curNumberOfGuns >= 2)
         {

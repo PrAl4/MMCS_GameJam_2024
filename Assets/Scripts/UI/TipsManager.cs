@@ -26,19 +26,22 @@ public class TipsManager : MonoBehaviour
     void UnlockNewTip() 
     {
         numberOfGunModes++;
-        if (numberOfGunModes == 1)
+        if (numberOfGunModes == 0)
             soundManager.PlaySoundtrack(playerController.WeaponKey);
+        Debug.Log(numberOfGunModes);
+        
     }
 
     public enum gunModes { Top, Right, Bottom, Left };
     public static gunModes curGunMode = gunModes.Top;
     gunModes oldGunMode = gunModes.Top;
-    private int numberOfGunModes = 0;
+    private int numberOfGunModes = UIShowManager.curNumberOfGuns - 1;
 
     private SoundManager soundManager;
     private void Start()
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        Debug.Log(numberOfGunModes);
     }
 
     private void Update()
@@ -50,6 +53,7 @@ public class TipsManager : MonoBehaviour
         }
         if (UIShowManager.wheelIsActive && numberOfGunModes >= 1) 
         {
+            
             if (Input.GetKeyDown(KeyCode.E))
             {
                 TwistWheelRight();
@@ -65,10 +69,11 @@ public class TipsManager : MonoBehaviour
     void TwistWheelRight()
     {
         curGunMode += 1;
-        if ((int)curGunMode == numberOfGunModes)
+        if ((int)curGunMode == numberOfGunModes + 1)
             curGunMode = 0;
         oldGunMode = curGunMode;
         SetNewActiveGun();
+        
 
         soundManager.PlayButtonSound();
         
@@ -78,9 +83,10 @@ public class TipsManager : MonoBehaviour
     {
         curGunMode -= 1;
         if ((int)curGunMode == -1)
-            curGunMode = (gunModes)(numberOfGunModes - 1);
+            curGunMode = (gunModes)(numberOfGunModes);
         oldGunMode = curGunMode;
         SetNewActiveGun();
+        
         soundManager.PlayButtonSound();
     }
 
@@ -93,8 +99,9 @@ public class TipsManager : MonoBehaviour
 
     void SetNewTips(int num)
     {
-        for (int i = 0; i < numberOfGunModes; i++)
+        for (int i = 0; i <= numberOfGunModes; i++)
         {
+            
             if (i == num)
             {
                 wheelButtonsEnhanced[i].SetActive(true);

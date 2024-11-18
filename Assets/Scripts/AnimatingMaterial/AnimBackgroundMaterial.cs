@@ -11,12 +11,12 @@ public class AnimMaterial : MonoBehaviour
 
     private void OnEnable()
     {
-
+        TakingWeaponScript.takingWeapon += StartAniamtion;
     }
 
     private void OnDisable()
     {
-
+        TakingWeaponScript.takingWeapon -= StartAniamtion;
     }
 
     void StartAniamtion(int num)
