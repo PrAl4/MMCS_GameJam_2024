@@ -93,6 +93,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7837129053406920268}
+  - component: {fileID: 2858941317994025041}
   - component: {fileID: 7378588718696125922}
   - component: {fileID: 6177746072990581687}
   - component: {fileID: 6269481314222328398}
@@ -121,6 +122,22 @@ Transform:
   - {fileID: 7708414691368988015}
   m_Father: {fileID: 7914930912667272851}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &2858941317994025041
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077180059459761435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c860ed70226879b43bcda26a1fe5d3ea, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  _materialFirstLevel: {fileID: 2100000, guid: 6af0bacc547c99a46ba71a842d6a194d, type: 2}
+  _materialSecondLevel: {fileID: 2100000, guid: 57a5ad63c8e6c914b87c2efa33d76e8f, type: 2}
+  _materialThirdLevel: {fileID: 2100000, guid: 6c6376fe863a83f4a9319017daa4f110, type: 2}
+  _materialFourthLevel: {fileID: 2100000, guid: 6068faef7dee87e4f82c8083af3517e8, type: 2}
 --- !u!114 &7378588718696125922
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -135,6 +152,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   weaponKey: 0
+  _numberOfScene: 0
   SnowBall: {fileID: 1594727329427904245, guid: 6dd7ba59e4ad9be49a0d04d33f8f802a, type: 3}
   Laser: {fileID: 3739949662369531189, guid: 149eb53b6abdb6e4fb4d62656433f8dc, type: 3}
   SnowBallTimerDuration: 0.5
@@ -226,7 +244,7 @@ BoxCollider2D:
   m_Offset: {x: 0.001557827, y: 0.004836321}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
-    pivot: {x: 0.5, y: 0.5}
+    pivot: {x: 0.5, y: 0.53125}
     oldSize: {x: 0.61538464, y: 1.2307693}
     newSize: {x: 0.61538464, y: 1.2307693}
     adaptiveTilingThreshold: 0.5

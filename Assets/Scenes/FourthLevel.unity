@@ -5137,19 +5137,19 @@ PrefabInstance:
     - target: {fileID: 3914324528409605042, guid: 0fd74119ea03a9c408f1487ef6f873fb, type: 3}
       propertyPath: _mainCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2133062298}
     - target: {fileID: 4294024290605125020, guid: 0fd74119ea03a9c408f1487ef6f873fb, type: 3}
       propertyPath: _mainCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2133062298}
     - target: {fileID: 6239626004396497666, guid: 0fd74119ea03a9c408f1487ef6f873fb, type: 3}
       propertyPath: _mainCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2133062298}
     - target: {fileID: 6995639387004974279, guid: 0fd74119ea03a9c408f1487ef6f873fb, type: 3}
       propertyPath: _mainCamera
       value: 
-      objectReference: {fileID: 0}
+      objectReference: {fileID: 2133062298}
     - target: {fileID: 7361708683763419536, guid: 0fd74119ea03a9c408f1487ef6f873fb, type: 3}
       propertyPath: m_LocalPosition.x
       value: 1.6723461
@@ -14475,13 +14475,17 @@ PrefabInstance:
       propertyPath: _numberOfScene
       value: 4
       objectReference: {fileID: 0}
+    - target: {fileID: 7837129053406920268, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
+      propertyPath: m_LocalPosition.x
+      value: 61.96
+      objectReference: {fileID: 0}
     - target: {fileID: 7914930912667272851, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
       propertyPath: m_LocalPosition.x
       value: -8.22
       objectReference: {fileID: 0}
     - target: {fileID: 7914930912667272851, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 3.35
+      value: 0.72
       objectReference: {fileID: 0}
     - target: {fileID: 7914930912667272851, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
       propertyPath: m_LocalPosition.z
@@ -14936,10 +14940,10 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 2133062299}
+  - component: {fileID: 2133062300}
+  - component: {fileID: 2133062301}
   - component: {fileID: 2133062298}
   - component: {fileID: 2133062297}
-  - component: {fileID: 2133062301}
-  - component: {fileID: 2133062300}
   m_Layer: 0
   m_Name: Main Camera
   m_TagString: MainCamera

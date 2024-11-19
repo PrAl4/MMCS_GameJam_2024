@@ -5,10 +5,10 @@ using UnityEngine.SceneManagement;
 
 public class TriggerEndScript : MonoBehaviour
 {
-
     private void OnTriggerEnter2D(Collider2D collision)
     {
-        SceneManager.LoadScene(0);   
+        GameObject.FindGameObjectWithTag("Player").GetComponent<ReloadShaders>().ReloadAll(); 
+        //  SceneManager.LoadScene(0);   
 
     }
 }
