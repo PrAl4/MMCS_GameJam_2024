@@ -1,27 +1,29 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static TipsManager;
 
 public class ButtonTipsBehaviour : MonoBehaviour
 {
+    [SerializeField]
+    GameData gameData;
+
     void Update()
     {
-        if (Input.GetKeyDown(KeyCode.Alpha1) && UIShowManager.curNumberOfGuns >= 1)
+        if (Input.GetKeyDown(KeyCode.Alpha1) && gameData.unlockedGuns >= 1)
         {
-            curGunMode = gunModes.Top;
+            gameData.SetGunMode(1);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha2) && UIShowManager.curNumberOfGuns >= 2)
+        else if (Input.GetKeyDown(KeyCode.Alpha2) && gameData.unlockedGuns >= 2)
         {
-            curGunMode = gunModes.Right;
+            gameData.SetGunMode(2);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha3) && UIShowManager.curNumberOfGuns >= 3)
+        else if (Input.GetKeyDown(KeyCode.Alpha3) && gameData.unlockedGuns >= 3)
         {
-            curGunMode = gunModes.Bottom;
+            gameData.SetGunMode(3);
         }
-        else if (Input.GetKeyDown(KeyCode.Alpha4) && UIShowManager.curNumberOfGuns >= 4) 
+        else if (Input.GetKeyDown(KeyCode.Alpha4) && gameData.unlockedGuns >= 4) 
         {
-            curGunMode = gunModes.Left;
+            gameData.SetGunMode(4);
         }
     }
 }

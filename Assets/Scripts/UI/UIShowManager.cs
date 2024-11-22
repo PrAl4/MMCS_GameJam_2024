@@ -14,45 +14,28 @@ public class UIShowManager : MonoBehaviour
     [SerializeField]
     GameObject[] gunTips;
 
+    [SerializeField]
+    GameData gameData;
+
     public static event Action gunUp;
 
     public static bool wheelIsActive = false;
 
-    public static int curNumberOfGuns = 0;
-
     private SoundManager soundManager;
-
-    private int oldNumber = 0;
 
     private void OnEnable()
     {
-        TakingWeaponScript.takingWeapon +=IncreaseAmountOfGuns;
-        RedEnemyController.diePlayer += DecreaseAmountOfGuns;
+        GameData.OnTakingNewGun += ShowNewTips;
     }
 
     private void OnDisable()
     {
-        TakingWeaponScript.takingWeapon -= IncreaseAmountOfGuns;
-        RedEnemyController.diePlayer -= DecreaseAmountOfGuns;
+        GameData.OnTakingNewGun -= ShowNewTips;
     }
 
-    void IncreaseAmountOfGuns(int n)
+    void ShowNewTips(int newGunNum) 
     {
-        Debug.Log(curNumberOfGuns);
-        oldNumber = curNumberOfGuns;
-        curNumberOfGuns++;
-        gunUp?.Invoke();
-        ShowNewTips();
-    }
-
-    void DecreaseAmountOfGuns()
-    {
-        curNumberOfGuns = oldNumber;
-    }
-
-    void ShowNewTips() 
-    {
-        for (int i = 0; i < curNumberOfGuns; i++) 
+        for (int i = 0; i < newGunNum; i++) 
         {
             wheelButtons[i].SetActive(true);
             gunTips[i].SetActive(true);
@@ -62,7 +45,7 @@ public class UIShowManager : MonoBehaviour
     private void Start()
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
-        ShowNewTips();
+        ShowNewTips(gameData.unlockedGuns);
     }
 
     void Update()

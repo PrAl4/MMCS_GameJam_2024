@@ -6,6 +6,6 @@ using UnityEngine;
 public class SettingsData : ScriptableObject
 { 
     public float volume = 0.5f;
-    public int _score;
+    
 
 }

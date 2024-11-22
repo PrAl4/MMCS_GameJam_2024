@@ -4980,6 +4980,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 1884532868}
   _weaponNumber: 4
+  _gameData: {fileID: 11400000, guid: 1fa80096b3fa6a84eb3dab46a11ba5f6, type: 2}
 --- !u!4 &474777963
 Transform:
   m_ObjectHideFlags: 0
@@ -14477,7 +14478,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 7837129053406920268, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 61.96
+      value: 0.46
+      objectReference: {fileID: 0}
+    - target: {fileID: 7837129053406920268, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
+      propertyPath: m_LocalPosition.y
+      value: 2.48
       objectReference: {fileID: 0}
     - target: {fileID: 7914930912667272851, guid: fa4a88c8a4d39804d96929ef5a2ec308, type: 3}
       propertyPath: m_LocalPosition.x

@@ -13986,6 +13986,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 289264042}
   _weaponNumber: 1
+  _gameData: {fileID: 11400000, guid: 1fa80096b3fa6a84eb3dab46a11ba5f6, type: 2}
 --- !u!1001 &1539835704
 PrefabInstance:
   m_ObjectHideFlags: 0

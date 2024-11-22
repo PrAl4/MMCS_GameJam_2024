@@ -6,17 +6,27 @@ public class AnimMaterial : MonoBehaviour
 {
     [SerializeField]
     Material mmaterial;
+    [SerializeField]
+    GameData gameData;
 
     public int numOfClouds;
 
     private void OnEnable()
     {
-        TakingWeaponScript.takingWeapon += StartAniamtion;
+        GameData.OnTakingNewGun += StartAniamtion;
     }
 
     private void OnDisable()
     {
-        TakingWeaponScript.takingWeapon -= StartAniamtion;
+        GameData.OnTakingNewGun -= StartAniamtion;
+    }
+
+    private void Start()
+    {
+        if (numOfClouds <= gameData.unlockedGuns)
+            mmaterial.SetFloat("_Distance", 0.7f);
+        else 
+            mmaterial.SetFloat("_Distance", 0.0f);
     }
 
     void StartAniamtion(int num)

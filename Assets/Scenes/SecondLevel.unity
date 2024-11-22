@@ -1916,6 +1916,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 278761048}
   _weaponNumber: 2
+  _gameData: {fileID: 11400000, guid: 1fa80096b3fa6a84eb3dab46a11ba5f6, type: 2}
 --- !u!4 &1292354670
 Transform:
   m_ObjectHideFlags: 0

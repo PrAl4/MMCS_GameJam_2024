@@ -12,6 +12,7 @@ GameObject:
   - component: {fileID: 8009434854995284783}
   - component: {fileID: 4127753192059669353}
   - component: {fileID: 5162080416066160198}
+  - component: {fileID: 444645220834803183}
   m_Layer: 5
   m_Name: WeaponCircle
   m_TagString: Untagged
@@ -93,6 +94,19 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   playerObj: {fileID: 0}
+--- !u!114 &444645220834803183
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 229790786880084800}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: eaad8fa7cdc50b1499b13df4f98ce365, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  gameData: {fileID: 11400000, guid: 1fa80096b3fa6a84eb3dab46a11ba5f6, type: 2}
 --- !u!1 &404655713501634673
 GameObject:
   m_ObjectHideFlags: 0
@@ -110,7 +124,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!224 &2309985348494612145
 RectTransform:
   m_ObjectHideFlags: 0
@@ -2190,6 +2204,7 @@ MonoBehaviour:
   - {fileID: 6272051835894508911}
   - {fileID: 513645604758259321}
   - {fileID: 4711291018545129367}
+  gameData: {fileID: 11400000, guid: 1fa80096b3fa6a84eb3dab46a11ba5f6, type: 2}
 --- !u!114 &8934800390225118638
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -2213,6 +2228,7 @@ MonoBehaviour:
   - {fileID: 8119065971389743063}
   - {fileID: 7822195137677867580}
   - {fileID: 5842525047815567596}
+  gameData: {fileID: 11400000, guid: 1fa80096b3fa6a84eb3dab46a11ba5f6, type: 2}
 --- !u!1 &8601264448559169130
 GameObject:
   m_ObjectHideFlags: 0
@@ -2384,3 +2400,4 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 945c09f999475424098a12372d6ea67b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  gameData: {fileID: 11400000, guid: 1fa80096b3fa6a84eb3dab46a11ba5f6, type: 2}
