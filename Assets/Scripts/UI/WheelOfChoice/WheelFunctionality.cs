@@ -4,10 +4,14 @@ using UnityEngine;
 
 public class WheelFunctionality : MonoBehaviour
 {
-    [SerializeField]
     GameData gameData;
 
     private int wheelCount = 1;
+
+    private void Start()
+    {
+        gameData = GettingGameData.GetDataObj();
+    }
 
     // Update is called once per frame
     void Update()

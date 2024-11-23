@@ -4,8 +4,12 @@ using UnityEngine;
 
 public class ButtonTipsBehaviour : MonoBehaviour
 {
-    [SerializeField]
     GameData gameData;
+
+    private void Start()
+    {
+        gameData = GettingGameData.GetDataObj();
+    }
 
     void Update()
     {

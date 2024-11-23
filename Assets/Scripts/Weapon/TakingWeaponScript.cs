@@ -10,8 +10,12 @@ public class TakingWeaponScript : MonoBehaviour
     public PlayerController _player;
     [SerializeField] int _weaponNumber;
 
-    [SerializeField]
     GameData _gameData;
+
+    private void Start()
+    {
+        _gameData = GettingGameData.GetDataObj();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {

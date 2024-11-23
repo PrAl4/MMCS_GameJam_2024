@@ -13,7 +13,6 @@ public class EnchancedTipsShowManager : MonoBehaviour
     [SerializeField]
     GameObject[] gunTipsEnhanced;
 
-    [SerializeField]
     GameData gameData;
 
     private SoundManager soundManager;
@@ -33,6 +32,7 @@ public class EnchancedTipsShowManager : MonoBehaviour
     private void Start()
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
+        gameData = GettingGameData.GetDataObj();
         SetNewActiveGun((int)gameData.curGunMode);
     }
 

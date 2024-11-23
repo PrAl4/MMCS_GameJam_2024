@@ -6,7 +6,7 @@ public class AnimMaterial : MonoBehaviour
 {
     [SerializeField]
     Material mmaterial;
-    [SerializeField]
+
     GameData gameData;
 
     public int numOfClouds;
@@ -23,6 +23,7 @@ public class AnimMaterial : MonoBehaviour
 
     private void Start()
     {
+        gameData = GettingGameData.GetDataObj();
         if (numOfClouds <= gameData.unlockedGuns)
             mmaterial.SetFloat("_Distance", 0.7f);
         else 
