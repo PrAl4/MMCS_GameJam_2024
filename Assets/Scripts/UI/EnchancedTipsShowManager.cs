@@ -13,20 +13,20 @@ public class EnchancedTipsShowManager : MonoBehaviour
     [SerializeField]
     GameObject[] gunTipsEnhanced;
 
-    GameData gameData;
+    GameDataScript gameData;
 
     private SoundManager soundManager;
 
     private void OnEnable()
     {
-        GameData.OnSwithingToAnotherGunMode += SetNewActiveGun;
-        GameData.OnTakingNewGun += SetNewActiveGun;
+        GameDataScript.OnSwithingToAnotherGunMode += SetNewActiveGun;
+        GameDataScript.OnTakingNewGun += SetNewActiveGun;
     }
 
     private void OnDisable()
     {
-        GameData.OnSwithingToAnotherGunMode -= SetNewActiveGun;
-        GameData.OnTakingNewGun -= SetNewActiveGun;
+        GameDataScript.OnSwithingToAnotherGunMode -= SetNewActiveGun;
+        GameDataScript.OnTakingNewGun -= SetNewActiveGun;
     }
 
     private void Start()

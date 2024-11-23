@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class ButtonTipsBehaviour : MonoBehaviour
 {
-    GameData gameData;
+    GameDataScript gameData;
 
     private void Start()
     {

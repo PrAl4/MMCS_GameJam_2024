@@ -4,7 +4,7 @@ using UnityEngine;
 
 public class WheelFunctionality : MonoBehaviour
 {
-    GameData gameData;
+    GameDataScript gameData;
 
     private int wheelCount = 1;
 

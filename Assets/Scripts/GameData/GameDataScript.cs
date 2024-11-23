@@ -5,7 +5,7 @@ using System.Linq;
 using UnityEngine;
 
 [CreateAssetMenu(fileName = "GameData", menuName = "Game Data", order = 51)]
-public class GameData : ScriptableObject
+public class GameDataScript : ScriptableObject
 {
     public int _score;
 

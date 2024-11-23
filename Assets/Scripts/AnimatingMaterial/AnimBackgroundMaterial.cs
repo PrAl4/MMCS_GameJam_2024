@@ -7,18 +7,18 @@ public class AnimMaterial : MonoBehaviour
     [SerializeField]
     Material mmaterial;
 
-    GameData gameData;
+    GameDataScript gameData;
 
     public int numOfClouds;
 
     private void OnEnable()
     {
-        GameData.OnTakingNewGun += StartAniamtion;
+        GameDataScript.OnTakingNewGun += StartAniamtion;
     }
 
     private void OnDisable()
     {
-        GameData.OnTakingNewGun -= StartAniamtion;
+        GameDataScript.OnTakingNewGun -= StartAniamtion;
     }
 
     private void Start()

@@ -5,7 +5,6 @@ using TMPro;
 using Unity.VisualScripting;
 using UnityEditor;
 using UnityEngine;
-using static Unity.VisualScripting.Icons;
 
 public class WheelOfChoice : MonoBehaviour
 {

@@ -13367,6 +13367,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: OneRedEnemy (4)
       objectReference: {fileID: 0}
+    - target: {fileID: 4043023379640124801, guid: ca9ed30ab2f622348b0f3a7b5741e241, type: 3}
+      propertyPath: m_IsActive
+      value: 0
+      objectReference: {fileID: 0}
     - target: {fileID: 5116218371110547805, guid: ca9ed30ab2f622348b0f3a7b5741e241, type: 3}
       propertyPath: m_Size.x
       value: 1.4036546
@@ -13986,7 +13990,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   _player: {fileID: 289264042}
   _weaponNumber: 1
-  _gameData: {fileID: 11400000, guid: 1fa80096b3fa6a84eb3dab46a11ba5f6, type: 2}
 --- !u!1001 &1539835704
 PrefabInstance:
   m_ObjectHideFlags: 0

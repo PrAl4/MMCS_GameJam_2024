@@ -19,6 +19,7 @@ public class MainMenuButtonsBehaviour : MonoBehaviour
 
     public void StartGameButton()
     {
+        Time.timeScale = 1.0f;
         SceneManager.LoadScene(1);
     }
 

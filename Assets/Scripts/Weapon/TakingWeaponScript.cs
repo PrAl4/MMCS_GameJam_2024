@@ -2,7 +2,7 @@ using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-using static GameData;
+using static GameDataScript;
 
 public class TakingWeaponScript : MonoBehaviour
 {
@@ -10,7 +10,7 @@ public class TakingWeaponScript : MonoBehaviour
     public PlayerController _player;
     [SerializeField] int _weaponNumber;
 
-    GameData _gameData;
+    GameDataScript _gameData;
 
     private void Start()
     {

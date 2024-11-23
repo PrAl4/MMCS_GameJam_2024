@@ -14,7 +14,7 @@ public class UIShowManager : MonoBehaviour
     [SerializeField]
     GameObject[] gunTips;
 
-    GameData gameData;
+    GameDataScript gameData;
 
     public static event Action gunUp;
 
@@ -24,12 +24,12 @@ public class UIShowManager : MonoBehaviour
 
     private void OnEnable()
     {
-        GameData.OnTakingNewGun += ShowNewTips;
+        GameDataScript.OnTakingNewGun += ShowNewTips;
     }
 
     private void OnDisable()
     {
-        GameData.OnTakingNewGun -= ShowNewTips;
+        GameDataScript.OnTakingNewGun -= ShowNewTips;
     }
 
     void ShowNewTips(int newGunNum) 
@@ -45,6 +45,7 @@ public class UIShowManager : MonoBehaviour
     {
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
         gameData = GettingGameData.GetDataObj();
+        //Debug.Log(gameData.curGunMode);
         ShowNewTips(gameData.unlockedGuns);
     }
 
