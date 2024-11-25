@@ -44,7 +44,7 @@ public class EnchancedTipsShowManager : MonoBehaviour
 
             playerController.WeaponKey = gunNum;
 
-            soundManager.PlaySoundtrack(gunNum);
+           // soundManager.PlaySoundtrack(gunNum);
         }
     }
 

@@ -24,8 +24,9 @@ public class TakingWeaponScript : MonoBehaviour
             _player.WeaponKey = _weaponNumber;
 
             _gameData.AddNewGun(_weaponNumber);
-
+ 
             Destroy(gameObject);
+
         }
     }
 }

@@ -26,7 +26,7 @@ public class PlayerController : MonoBehaviour
 
     public GameObject BraidHitArea;
     BraidAreaTrigger braidHitArea;
-    private SoundManager soundManager;
+    public SoundManager soundManager;
     public int WeaponKey    //0 - без, 1 - коса, 2 - щит, 3 - посох, 4 - лазер. Менять каждый раз при переключении оружия.
     {
         get { return weaponKey; }

@@ -10,7 +10,7 @@ public class BeatManager : MonoBehaviour
     public AudioSource _audioSource;
     public Intervals[] _intervals;
 
-    private void Update()
+    private void FixedUpdate()
     {
         foreach (Intervals interval in _intervals)
         {

@@ -3,6 +3,7 @@ using UnityEngine;
 using System;
 using System.Collections;
 using UnityEngine.Rendering;
+using static Unity.VisualScripting.Member;
 
 public class SoundManager : MonoBehaviour
 {
@@ -12,7 +13,8 @@ public class SoundManager : MonoBehaviour
     int currentMelody;
     int nextMelody;
     bool changeSoundtrack = false;
-    // Start is called before the first frame update
+
+   
     void Awake()
     {
         foreach (Sound s in sounds)
@@ -24,6 +26,13 @@ public class SoundManager : MonoBehaviour
             s.source.loop = s.loop;
         }
         
+    }
+    private void Start()
+    {
+        GameDataScript.OnTakingNewGun += PlaySoundtrack;
+        GameDataScript.OnSwithingToAnotherGunMode += PlaySoundtrack;
+        LoadSounds();
+        PlaySoundtrack(currentMelody);
     }
     void Update()
     {
@@ -48,12 +57,18 @@ public class SoundManager : MonoBehaviour
             return;
         s.source.Stop();
     }
-    private void StopAllSoundtrack()
+    private void StopSoundtrack(int melody)
     {
-        Stop("Mel1");
-        Stop("Mel2");
-        Stop("Mel3");
-        Stop("Mel4");
+        if (melody == 1)
+            Stop("Mel4");
+        if (melody == 2)
+            Stop("Mel3");
+        if (melody == 3)
+            Stop("Mel1");
+        if (melody == 4)
+            Stop("Mel2");
+        if (melody == 0)
+            return;
     }
     public void PlayButtonSound()
     {
@@ -97,14 +112,14 @@ public class SoundManager : MonoBehaviour
     {
         changeSoundtrack = true;
         nextMelody = weaponKey;
-        StartCoroutine(VolumeFade());
+       // StartCoroutine(VolumeFade());
     }
     public void ChangeMelody()
     {
         if (changeSoundtrack)
         {
             AudioSource source = null;
-            StopAllSoundtrack();
+            StopSoundtrack(currentMelody);
             if (nextMelody == 1)
                 source = GetSource("Mel4");
             if (nextMelody == 2)
@@ -116,9 +131,9 @@ public class SoundManager : MonoBehaviour
 
 
             source.Play();
-            StartCoroutine(VolumeIncrease(source)); 
-            changeSoundtrack = false;
+           // StartCoroutine(VolumeIncrease(source)); 
             currentMelody = nextMelody;
+            changeSoundtrack = false;
         }
     }
     private AudioSource GetSource(string name)
@@ -127,6 +142,17 @@ public class SoundManager : MonoBehaviour
         if (s == null)
             return null;
         return s.source;
+    }
+    private void LoadSounds()
+    {
+        for (int  i = 1; i < 5; i++)
+        {
+            AudioSource source = GetSource("Mel" + i);
+            source.volume = 0f;
+            source.Play();
+            source.Stop();
+            source.volume = 1f;
+        }
     }
     IEnumerator VolumeFade()
     {
@@ -148,6 +174,7 @@ public class SoundManager : MonoBehaviour
             timeElapsed += Time.deltaTime;  
             yield return null;
         }
+        //StopAllSoundtrack();
     }
     IEnumerator VolumeIncrease(AudioSource source)
     {

@@ -67,7 +67,7 @@ MonoBehaviour:
     loop: 0
   - name: Staff
     clip: {fileID: 8300000, guid: 6a8ef38ed7d43eb40b1d14a92705c911, type: 3}
-    volume: 0.5
+    volume: 0.28
     pitch: 1
     source: {fileID: 0}
     loop: 0
@@ -84,7 +84,7 @@ MonoBehaviour:
     source: {fileID: 0}
     loop: 0
   - name: BaseSoundtrack
-    clip: {fileID: 8300000, guid: 6a99e08310012d045be696166d644bfd, type: 3}
+    clip: {fileID: 8300000, guid: f0802fd1a64d1be4a83a2419de8bef7e, type: 3}
     volume: 1
     pitch: 1
     source: {fileID: 0}
@@ -113,6 +113,12 @@ MonoBehaviour:
     pitch: 1
     source: {fileID: 0}
     loop: 1
+  - name: Laser
+    clip: {fileID: 8300000, guid: 07e3f468c52c77e498c479bf34ce3ddb, type: 3}
+    volume: 0.195
+    pitch: 1
+    source: {fileID: 0}
+    loop: 0
 --- !u!114 &3538217719749594493
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -154,7 +160,7 @@ AudioSource:
   m_Enabled: 1
   serializedVersion: 4
   OutputAudioMixerGroup: {fileID: 24300002, guid: 1be5faeb81387594b9b2c00cffe8c191, type: 2}
-  m_audioClip: {fileID: 8300000, guid: 6a99e08310012d045be696166d644bfd, type: 3}
+  m_audioClip: {fileID: 8300000, guid: f0802fd1a64d1be4a83a2419de8bef7e, type: 3}
   m_PlayOnAwake: 1
   m_Volume: 1
   m_Pitch: 1
