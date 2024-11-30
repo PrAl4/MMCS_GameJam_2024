@@ -12,7 +12,7 @@ public class BraidAreaTrigger : MonoBehaviour
         enemyTriggers = new List<GameObject>();
         hit_area = GetComponent<PolygonCollider2D>();
     }
-    public void FlipHitArea(bool flip)
+    public void FlipHitArea(bool flip) // 
     {
         if (currentFlip != flip)
         {
@@ -25,7 +25,7 @@ public class BraidAreaTrigger : MonoBehaviour
             hit_area.points = points;
         }
     }
-    public List<GameObject> GetTriggers()
+    public List<GameObject> GetTriggers() // Возвращаем все объекты что у нас в триггере
     {
         return enemyTriggers;
     }

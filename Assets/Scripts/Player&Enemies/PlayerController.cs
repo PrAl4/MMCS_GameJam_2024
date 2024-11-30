@@ -4,20 +4,18 @@ using Unity.VisualScripting;
 using UnityEngine;
 using System.Linq;
 using UnityEngine.SceneManagement;
+using System;
 
 public class PlayerController : MonoBehaviour
 {
 
     [SerializeField] float speed = 3f;
     [SerializeField] int weaponKey = 0;
-    [SerializeField] int _numberOfScene;
-    private bool isAttack = false;
+
+    public bool isAttack = false;
     private Rigidbody2D rb;
-    private float move;
-    private bool isGrounded;
+    public bool isGrounded;
     private SpriteRenderer spriteRenderer;
-    private Animator animator;
-    private GameObject player;
 
     public GameObject SnowBall;
     public GameObject Laser;
@@ -27,48 +25,37 @@ public class PlayerController : MonoBehaviour
     public GameObject BraidHitArea;
     BraidAreaTrigger braidHitArea;
     public SoundManager soundManager;
-    public int WeaponKey    //0 - без, 1 - коса, 2 - щит, 3 - посох, 4 - лазер. Менять каждый раз при переключении оружия.
-    {
-        get { return weaponKey; }
-        set
-        {
-            weaponKey = value;
-            animator.SetInteger("WeaponKey", weaponKey);
-        }
-    }
-    public bool IsAttack  //По сути только для удара косой
-    {
-        get { return isAttack; }
-        set
-        {
-            isAttack = value;
-            animator.SetBool("IsAttack", isAttack);
 
+    public static event Action<bool> isJumping;
+    public static event Action<bool> isRunning;
+    public static event Action<bool> isAttacking;
 
-        }
-    }
+    GameDataScript gameData;
 
-    void ResetAttack()
-    {
-        IsAttack = false;
-    }
 
     private void Awake()
     {
         rb = GetComponent<Rigidbody2D>();
-        player = GetComponent<GameObject>();
         spriteRenderer = GetComponent<SpriteRenderer>();
         rb.inertia = 0;
     }
 
+    void ResetAttack() // Event in animator for disabling scythe anim and isAttack = false after ending
+    {
+        isAttack = false;
+        isAttacking?.Invoke(false);
+    }
 
     void Start()
     {
-        animator = GetComponent<Animator>();
+
+        gameData = GettingGameData.GetDataObj();
+
         Cursor.lockState = CursorLockMode.Locked;
         Cursor.visible = false;
-        WeaponKey = weaponKey;
+
         braidHitArea = BraidHitArea.GetComponent<BraidAreaTrigger>();
+
         soundManager = GameObject.FindGameObjectWithTag("SoundManager").GetComponent<SoundManager>();
     }
 
@@ -87,19 +74,20 @@ public class PlayerController : MonoBehaviour
             Jump();
         }
 
-        if (Input.GetKeyDown(KeyCode.Mouse0) && isGrounded && !IsAttack)
+        if (Input.GetKeyDown(KeyCode.Mouse0) && isGrounded && !isAttack)
         {
-            if (WeaponKey == 1)
+            if ((int)gameData.curGunMode == 1)
             {
-                IsAttack = true;
+                isAttacking?.Invoke(true);
+                isAttack = true;
                 soundManager.Play("Braid");
-                List<GameObject> triggers = braidHitArea.GetTriggers();
-                foreach (GameObject trigger in triggers)
-                {
-                   // Debug.Log(trigger);     //здесь будет наносится урон косой по RedEnemy. trigger - red enemy.
-                }
+                //List<GameObject> triggers = braidHitArea.GetTriggers();
+                //foreach (GameObject trigger in triggers)
+                //{
+                //   // Debug.Log(trigger);     //здесь будет наносится урон косой по RedEnemy. trigger - red enemy.
+                //}
             }
-            else if (WeaponKey == 3 && !snowBallTimerActive)
+            else if ((int)gameData.curGunMode == 3 && !snowBallTimerActive)
             {
 
                 soundManager.Play("Staff");
@@ -110,7 +98,7 @@ public class PlayerController : MonoBehaviour
                 SnowBallController snowBall = instance.GetComponent<SnowBallController>();
                 snowBall.setDirection(-dir);
             }
-            else if (WeaponKey == 4 && !snowBallTimerActive)
+            else if ((int)gameData.curGunMode == 4 && !snowBallTimerActive)
             {
 
                 soundManager.Play("Laser");
@@ -120,15 +108,6 @@ public class PlayerController : MonoBehaviour
                 GameObject instance = Instantiate(Laser, transform.position + new Vector3(0.5f * -dir, 0, 0), Quaternion.identity);
                 LaserController laser = instance.GetComponent<LaserController>();
                 laser.setDirection(-dir);
-            }
-        }
-
-        for (int i = 0; i < 4; i++)
-        {
-            if (Input.GetKeyDown(KeyCode.Alpha1 + i))   //смена оружия на 1, 2, 3, 4.
-            {
-                WeaponKey = i + 1;
-                soundManager.Play("ChangeWeapon");
             }
         }
     }
@@ -165,14 +144,14 @@ public class PlayerController : MonoBehaviour
         }
         if (isGrounded)
         {
-            animator.SetBool("IsJumping", false);
+            isJumping?.Invoke(false);
             if (inputAxis != 0)
             {
-                animator.SetBool("IsRuning", true);
+                isRunning?.Invoke(true);
             }
             else
             {
-                animator.SetBool("IsRuning", false);
+                isRunning?.Invoke(false);
             }
         }
 
@@ -180,15 +159,15 @@ public class PlayerController : MonoBehaviour
     void Jump()
     {
         rb.velocity = new Vector2(rb.velocity.x, 9f);
-        animator.SetBool("IsJumping", true);
-        animator.SetBool("IsRuning", false);
+        isJumping?.Invoke(true);
+        isRunning?.Invoke(false);
         soundManager.Jumping();
     }
     void CollisionEnter2D(Collision2D collision)
     {
-            if (collision.gameObject.tag == "RedEnemy" | collision.gameObject.tag == "BlueEnemy" | collision.gameObject.tag == "GreenEnemy" | collision.gameObject.tag == "PurpleEnemy")
+        if (collision.gameObject.tag == "RedEnemy" | collision.gameObject.tag == "BlueEnemy" | collision.gameObject.tag == "GreenEnemy" | collision.gameObject.tag == "PurpleEnemy")
         {
-            if (WeaponKey == 2 & collision.gameObject.tag == "GreenEnemy")
+            if ((int)gameData.curGunMode == 2 & collision.gameObject.tag == "GreenEnemy")
             {
                 GameObject.Destroy(collision.gameObject);
             }
@@ -197,7 +176,7 @@ public class PlayerController : MonoBehaviour
     }
     void Die()
     {
-         SceneManager.LoadScene(_numberOfScene);
+         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }

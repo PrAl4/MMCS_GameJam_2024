@@ -8,11 +8,6 @@ public class SnowBallController : MonoBehaviour
     private float speed = 5f;
     private SpriteRenderer spriteRenderer;
 
-    void Start()
-    {
-
-    }
-
     public void setDirection(int direction)
     {
         this.direction = direction;
@@ -31,11 +26,11 @@ public class SnowBallController : MonoBehaviour
 
     private void OnTriggerEnter2D(Collider2D other)
     {
-        if (other.CompareTag("BlueEnemy"))
+        if (other.CompareTag("BlueEnemy")) // Нанесение урона синей твари
         {
             other.gameObject.GetComponent<Health>().TakeDamage(1f);
         }
-        if (!other.CompareTag("BraidHitArea") && !other.CompareTag("Player"))
+        if (!other.CompareTag("BraidHitArea") && !other.CompareTag("Player")) // Разрушение льдышки
         {
             Destroy(gameObject);
         }

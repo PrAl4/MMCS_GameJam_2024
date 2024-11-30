@@ -7,7 +7,8 @@ public class RedEnemyController : MonoBehaviour
 {
     [SerializeField] private float speed = 2f;
     [SerializeField] private float leftCorner, rightCorner;
-    [SerializeField] int _numberOfScene;
+    //[SerializeField] int _numberOfScene;
+
     private Rigidbody2D rigidbody2d;
     private Vector2 direction = Vector2.left;
     private int _direction = 1;
@@ -17,6 +18,7 @@ public class RedEnemyController : MonoBehaviour
 
     public static event Action diePlayer;
 
+    GameDataScript gameData;
 
     void Awake()
     {
@@ -32,7 +34,7 @@ public class RedEnemyController : MonoBehaviour
     {
         rigidbody2d.velocity = direction * speed *_direction;
         positionX = rigidbody2d.position.x;
-
+        gameData = GettingGameData.GetDataObj();
 
     }
 
@@ -66,8 +68,7 @@ public class RedEnemyController : MonoBehaviour
 
         if (collision.gameObject.tag == "Player")
         {
-            PlayerController weaponKey = collision.gameObject.GetComponent<PlayerController>();
-            if (weaponKey.WeaponKey == 2)
+            if ((int)gameData.curGunMode == 2)
             {
                 health.TakeDamage(1f);
             }
@@ -75,7 +76,7 @@ public class RedEnemyController : MonoBehaviour
             {
                 //Destroy(collision.gameObject);
                 diePlayer?.Invoke();
-                SceneManager.LoadScene(_numberOfScene);
+                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
             }
         }
         

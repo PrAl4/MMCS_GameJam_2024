@@ -40,7 +40,7 @@ public class Health : MonoBehaviour
     {
         if (collision.gameObject.tag == "BraidHitArea")
         {
-            if (_player.IsAttack)
+            if (_player.isAttack)
             {
                 if (this.gameObject.tag == "RedEnemy")
                 {
@@ -68,7 +68,6 @@ public class Health : MonoBehaviour
 
     private void Die()
     {
-
         Destroy(gameObject);
     }
 

@@ -5,9 +5,6 @@ using UnityEngine;
 public class EnchancedTipsShowManager : MonoBehaviour
 {
     [SerializeField]
-    PlayerController playerController;
-
-    [SerializeField]
     GameObject[] wheelButtonsEnhanced;
 
     [SerializeField]
@@ -41,8 +38,6 @@ public class EnchancedTipsShowManager : MonoBehaviour
         if (gunNum != 0) 
         {
             SetNewTips(gunNum - 1);
-
-            playerController.WeaponKey = gunNum;
 
            // soundManager.PlaySoundtrack(gunNum);
         }

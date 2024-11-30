@@ -99,6 +99,7 @@ GameObject:
   - component: {fileID: 6269481314222328398}
   - component: {fileID: 5728896253323818038}
   - component: {fileID: 5536387487950629240}
+  - component: {fileID: 5338050172870001255}
   m_Layer: 0
   m_Name: MainCharacter
   m_TagString: Player
@@ -152,11 +153,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   speed: 3
   weaponKey: 0
-  _numberOfScene: 0
+  isAttack: 0
+  isGrounded: 0
   SnowBall: {fileID: 1594727329427904245, guid: 6dd7ba59e4ad9be49a0d04d33f8f802a, type: 3}
   Laser: {fileID: 3739949662369531189, guid: 149eb53b6abdb6e4fb4d62656433f8dc, type: 3}
   SnowBallTimerDuration: 0.5
   BraidHitArea: {fileID: 7583501811830363402}
+  soundManager: {fileID: 0}
 --- !u!212 &6177746072990581687
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -302,6 +305,18 @@ Animator:
   m_AllowConstantClipSamplingOptimization: 1
   m_KeepAnimatorStateOnDisable: 0
   m_WriteDefaultValuesOnDisable: 0
+--- !u!114 &5338050172870001255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 2077180059459761435}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 201e455b0ac7215448d0a8839a8036b1, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &2505073636766388664
 GameObject:
   m_ObjectHideFlags: 0

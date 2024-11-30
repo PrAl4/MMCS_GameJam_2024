@@ -5,13 +5,18 @@ using UnityEngine;
 public class PointScript : MonoBehaviour
 {
 
-    public static int score = 0;
+    GameDataScript gameData;
+
+    private void Start()
+    {
+        gameData = GettingGameData.GetDataObj();
+    }
 
     private void OnTriggerEnter2D(Collider2D collision)
     {
         if(collision.gameObject.tag == "Player")
         {
-            score++;
+            gameData._score++;
             Destroy(gameObject);
         }
     }

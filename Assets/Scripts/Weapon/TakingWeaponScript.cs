@@ -6,8 +6,6 @@ using static GameDataScript;
 
 public class TakingWeaponScript : MonoBehaviour
 {
-
-    public PlayerController _player;
     [SerializeField] int _weaponNumber;
 
     GameDataScript _gameData;
@@ -21,10 +19,7 @@ public class TakingWeaponScript : MonoBehaviour
     {
         if(collision.gameObject.tag == "Player")
         {
-            _player.WeaponKey = _weaponNumber;
-
             _gameData.AddNewGun(_weaponNumber);
- 
             Destroy(gameObject);
 
         }
