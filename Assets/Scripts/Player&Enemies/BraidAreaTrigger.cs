@@ -25,7 +25,7 @@ public class BraidAreaTrigger : MonoBehaviour
             hit_area.points = points;
         }
     }
-    public List<GameObject> GetTriggers() // Возвращаем все объекты что у нас в триггере
+    public List<GameObject> GetTriggers() // Возвращаем все Вобъекты что у нас в триггере
     {
         return enemyTriggers;
     }
