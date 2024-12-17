@@ -11,6 +11,7 @@ public class PlayerController : MonoBehaviour
 
     [SerializeField] float speed = 3f;
     [SerializeField] int weaponKey = 0;
+    [SerializeField] float jumpHeight = 7f;
 
     public bool isAttack = false;
     private Rigidbody2D rb;
@@ -158,7 +159,7 @@ public class PlayerController : MonoBehaviour
     }
     void Jump()
     {
-        rb.velocity = new Vector2(rb.velocity.x, 9f);
+        rb.velocity = new Vector2(rb.velocity.x, jumpHeight);
         isJumping?.Invoke(true);
         isRunning?.Invoke(false);
         soundManager.Jumping();
