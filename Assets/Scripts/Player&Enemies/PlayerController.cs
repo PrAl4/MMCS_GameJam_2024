@@ -164,7 +164,7 @@ public class PlayerController : MonoBehaviour
         isRunning?.Invoke(false);
         soundManager.Jumping();
     }
-    void CollisionEnter2D(Collision2D collision)
+    void OnCollisionEnter2D(Collision2D collision)
     {
         if (collision.gameObject.tag == "RedEnemy" | collision.gameObject.tag == "BlueEnemy" | collision.gameObject.tag == "GreenEnemy" | collision.gameObject.tag == "PurpleEnemy")
         {
@@ -172,12 +172,14 @@ public class PlayerController : MonoBehaviour
             {
                 GameObject.Destroy(collision.gameObject);
             }
-            Die();
+            else
+                Die();
         }
     }
     void Die()
     {
-         SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
+        gameData.ResetLvlProgress(SceneManager.GetActiveScene().buildIndex);
+        SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
     }
 
 }

@@ -12,8 +12,8 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 28aa632ae2e10b64b9a774f7cd379a62, type: 3}
   m_Name: GameData
   m_EditorClassIdentifier: 
-  _score: 3
+  _score: 13
   havingGun: 1
-  curGunMode: 4
-  unlockedGuns: 4
-  obtainedGuns: 01000000020000000300000004000000
+  curGunMode: 1
+  unlockedGuns: 1
+  obtainedGuns: 01000000000000000000000000000000

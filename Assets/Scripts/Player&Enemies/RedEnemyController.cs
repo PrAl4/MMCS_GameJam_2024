@@ -72,12 +72,6 @@ public class RedEnemyController : MonoBehaviour
             {
                 health.TakeDamage(1f);
             }
-            else
-            {
-                //Destroy(collision.gameObject);
-                diePlayer?.Invoke();
-                SceneManager.LoadScene(SceneManager.GetActiveScene().buildIndex);
-            }
         }
         
     }

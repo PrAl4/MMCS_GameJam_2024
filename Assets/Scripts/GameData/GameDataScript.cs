@@ -54,21 +54,23 @@ public class GameDataScript : ScriptableObject
 
     public void ResetLvlProgress(int gunNum) // Ýעמ םאהמ ושו מבדמגמנטעü
     {
-        obtainedGuns[gunNum - 1] = gunModes.Without;
-        if (unlockedGuns < 0)
-            unlockedGuns = 0;
-        else
-            unlockedGuns--;
-
-        if (unlockedGuns == 0)
+        if (unlockedGuns == gunNum) 
         {
+            obtainedGuns[gunNum - 1] = gunModes.Without;
+            unlockedGuns--;
             havingGun = false;
             curGunMode = gunModes.Without;
         }
-        else 
+    }
+
+    public void ResetAllProgress() 
+    {
+        havingGun = false;
+        curGunMode = gunModes.Without;
+        for (int i = 0; i < obtainedGuns.Length; i++) 
         {
-            havingGun = true;
-            curGunMode = gunModes.Top;
+            obtainedGuns[i] = gunModes.Without;
         }
+        unlockedGuns = 0;
     }
 }
