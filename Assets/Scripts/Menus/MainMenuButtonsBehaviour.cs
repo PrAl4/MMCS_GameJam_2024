@@ -10,16 +10,19 @@ public class MainMenuButtonsBehaviour : MonoBehaviour
     GameObject mainMenu;
     [SerializeField]
     GameObject settingsMenu;
+    GameDataScript gameData;
 
     private void Start()
     {
         Cursor.visible = true;
         Cursor.lockState = CursorLockMode.None;
+        gameData = GettingGameData.GetDataObj();
     }
 
     public void StartGameButton()
     {
         Time.timeScale = 1.0f;
+        gameData.ResetAllProgress();
         SceneManager.LoadScene(1);
     }
 
